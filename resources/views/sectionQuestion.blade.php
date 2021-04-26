@@ -132,13 +132,12 @@ Settings<i class="entypo-cog"></i> </a> </li>
 <li> <a href="login.html">
 Log Out <i class="entypo-logout right"></i> </a> </li> </ul> </div> </div> <hr> 
 <!-- TS16167567752040: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> 
-<ol class="breadcrumb bc-3"> <li> <a href="main-3"><i class="fa-home"></i>Home</a> </li> 
-<li class="active"> <strong>Templates</strong> </li> </ol> <h2>{{$templatename}}</h2> <section class="comments-env"> 
+<ol class="breadcrumb bc-3"> <li> <a href="main-3"><i class="fa-home"></i>Home</a> </li> <li class="active"> <strong>Templates</strong> </li> </ol> <h2>Templates</h2> <section class="comments-env"> 
 
+<div class="filtering"> <div class="row"> <div class="col-sm-3">  
 
-<div class="filtering"> <div class="row"> <div class="col-sm-3"> </div><br>
-        
-       </div> </div> <div class="row" style="margin:2%";> <div class="col-md-12"> <div class="panel panel-primary"> <div class="panel-heading"> <div class="panel-title"> <h4>
+<div class="col-sm-9 search-and-pagination"> <div class="pagination-container"> <ul class="pagination">  </ul>   </div> </div> </div> </div> 
+<div class="row"> <div class="col-md-10"> <div class="panel panel-primary"> <div class="panel-heading"> <div class="panel-title"> <h4>
 Write your Questions here..
  </h4> </div> </div>
  <div class="panel-body no-padding"> <ul class="comments-list">
@@ -156,7 +155,7 @@ Write your Questions here..
 		e.preventDefault();
 		if(x < max_fields){ //max input box allowed
 			x++; //text box increment
-			$(wrapper).append('<div><br></br><p><label>Add Question</label></p><input type="text" class="form-control" name="mytext[]"/> <Span><ul class="user-info pull-left pull-right-xs pull-none-xsm"> <li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-attention"></i>  </a> </li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-star"></i> </a></li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-db-shape"></i> </a><li></ul> </li></span><br><span><a href="#" class="remove_field">&nbspRemove</a></span><br></div>'); //add input box
+			$(wrapper).append('<div><br><input type="text" class="form-control" name="mytext[]"/> <Span><ul class="user-info pull-left pull-right-xs pull-none-xsm"> <li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-attention"></i>  </a> </li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-star"></i> </a></li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-db-shape"></i> </a><li></ul> </li></span><br><span><a href="#" class="remove_field">&nbspRemove</a></span><br></div>'); //add input box
 		}
 	});
 	
@@ -164,152 +163,60 @@ Write your Questions here..
 		e.preventDefault(); $(this).parent('div').remove(); x--;
 	})
 });</script>
+<form method="post" action="questionSave" enctype="multipart/form-data">
+    {{csrf_field()}}
+ <div class="col-sm-3 row"> 
+ <input type="hidden" name="template_name" value="{{$templatename}}" required=""> 
+<label>Section Name:</label>
+<div><input type="text" class="form-control" placeholder="Name.." name="section_name" value="{{$sectionName}}" id="txtName"></div></div><br></br><br></br><br>
+@foreach ($result as $r)
+<div class="col-md-11 row" style="margin-left:2%";>
+<input type="text" class="form-control" name="mytext[]" value="{{$r}}">
+<Span><ul class="user-info pull-left pull-right-xs pull-none-xsm"> 
+    <li class="notifications dropdown"> 
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> 
+    <i class="entypo-attention"></i>  </a> </li>
+    <li class="notifications dropdown"> 
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> 
+    <i class="entypo-star"></i> </a></li>
+    <li class="notifications dropdown"> 
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+     <i class="entypo-db-shape"></i> </a><li></ul> </li></span></div>
+@endforeach 
+<div class="row" style="margin-left:2%";> <div class="col-md-11"> <div class="input_fields_wrap">
+    <button class="add_field_button">Add More Questions</button><br>
+   <!-- <p> <label>Add Question</label></p> -->
+    <br><div><input type="text" class="form-control" name="mytext[]"></div>
+    <Span><ul class="user-info pull-left pull-right-xs pull-none-xsm"> 
+    <li class="notifications dropdown"> 
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> 
+    <i class="entypo-attention"></i>  </a> </li>
+    <li class="notifications dropdown"> 
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> 
+    <i class="entypo-star"></i> </a></li>
+    <li class="notifications dropdown"> 
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+     <i class="entypo-db-shape"></i> </a><li></ul> </li></span><br>
+   
 
-    
- <div class="row"> 
- <div class="col-sm-12">  
-
-<label Style="text-align: center;">Section Name:</label>
-
-@foreach($result as $section)
-@if($section!='kshatrugan')
-<div><form method="POST" action="sectionQuestion">
-        @csrf
-        <input type="hidden" name="sectionName" value="{{$section}}" required="">
-        <input type="hidden" name="templatename" value="{{$templatename}}" required="">
-        <input type="submit" class="btn btn-grey btn-block" name="submit" style="margin-right:25%;" value="{{$section}}">
-        </form></div><br>
-        @else
-             <p>No Section Added. Add Section to review.</p>
-        
-        @endif
-@endforeach
-</div>
-</div>
-</div></div></div>
-<form method="POST" action="addSection">
-        @csrf
-        <input type="hidden" name="template_name" value="{{$templatename}}" required="">
-        <input type="submit" class="btn btn-primary" name="submit" style="margin-right:25%;" value="Add Section">
-        </form>
+<!-- <a href="javascript:;.html" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class="btn btn-primary" onclick="showAjaxModal();">Add Section</a> -->
 
 
- <!-- TS161675654111277: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates -->
 
+</div></div></div></div>
+<button class="btn btn-success ">Submit</button></form></div>
  
 
-<!-- <div class="checkbox checkbox-replace color primary neon-cb"> <input type="checkbox">Mark as Read </div>  
-<div class="checkbox checkbox-replace color-primary neon-cb-replacement check"><label class="cd-wrapper"><input type="checkbox" id="chk-20" checked><div class="checked"></label><label>One</label><div> -->
-
-<!-- <script type="text/javascript">
-jQuery(document).ready.ready(function($))
-{
-     $('.dd').nestable({});
-
-}); </script>
-<div class="panel-body">
-     before::
-<div id="list-1" class= "nested-list dd with margins">
-<ul class="dd-list">
-     
-<li class="dd-item">
-     <button data-action="collapse" type="button" style="display:block;">
-     ::before
-     "collapse"
-     ::after
-</button>
-<button data-action="expand" type="button" style="dispkay:none;">Expand</button>
-<div class="dd-handle"> Item 1</div>
-<ul class="dd-list" style>
-     <li class="dd-item">
-     <div class="dd-handle">
-          sub Item 1 </div>
-</li>
-<li class="dd-item">
-     <div class="dd-handle">
-          sub Item 2 </div>
-</li></ul></li> -->
+   
+  
 
 
-<!-- <div class="col-md-12">
-<input type="text" class="form-control"></div> </div> -->
-<!-- <div class="comment-footer"> <div class="comment-time">
-Today - 21:05
-</div> <div class="action-links"> <a href="#" class="approve"> <i class="entypo-check"></i>
-Approve
-</a> <a href="#" class="delete"> <i class="entypo-cancel"></i>
-Delete
-</a> <a href="javascript:;.html" onclick="jQuery('#modal-edit-comment').modal('show');" class="edit"> <i class="entypo-pencil"></i>
-Edit
-</a> </div> </div> </div> </li> 
-<li> <div class="comment-checkbox"> <div class="checkbox checkbox-replace"> <input type="checkbox"> </div> </div> <div class="comment-details"> <div class="comment-head"> 
-    <a href="#">Is the OE aware about CTQ on his deployed station?</a> </div> <p class="comment-text">
-By an packages rejoiced exercise. To ought on am marry rooms doubt music. Mention entered an through company as. Up arrived no painful between. It declared is prospect an insisted pleasure. 
-</p> <div class="comment-footer"> <div class="comment-time">
-Yesterday - 12:10
-</div> <div class="action-links"> <a href="#" class="approve"> <i class="entypo-check"></i>
-Approve
-</a> <a href="#" class="delete"> <i class="entypo-cancel"></i>
-Delete
-</a> <a href="javascript:;.html" onclick="jQuery('#modal-edit-comment').modal('show');" class="edit"> <i class="entypo-pencil"></i>
-Edit
-</a> </div> </div> </div> </li> <li> <div class="comment-checkbox"> <div class="checkbox checkbox-replace"> <input type="checkbox"> </div> </div> <div class="comment-details"> <div class="comment-head">
-     <a>Is the O.E. familiar with current complaints/concerns?</a> </div> <p class="comment-text">
-Put use set uncommonly announcing and travelling. Allowance sweetness direction to as necessary. Principle oh explained excellent do my suspected conveying in. Excellent you did therefore perfectly supposing described. 
-</p> <div class="comment-footer"> <div class="comment-time">
-Monday, 04 March - 10:49
-</div> <div class="action-links"> <a href="#" class="approve"> <i class="entypo-check"></i>
-Approve
-</a> <a href="#" class="delete"> <i class="entypo-cancel"></i>
-Delete
-</a> <a href="javascript:;.html" onclick="jQuery('#modal-edit-comment').modal('show');" class="edit"> <i class="entypo-pencil"></i>
-Edit
-</a> </div> </div> </div> </li> <li> <div class="comment-checkbox"> <div class="checkbox checkbox-replace"> <input type="checkbox"> </div> </div> <div class="comment-details"> <div class="comment-head"> 
-    <a href="#">Is the OE familiar with the measuring/test equipment provided for inspections and does he/she use these appropriately?				</a> </div> <p class="comment-text">
-Fact are size cold why had part. If believing or sweetness otherwise in we forfeited. Tolerably an unwilling arranging of determine. Beyond rather sooner so if up wishes or. 
-</p> <div class="comment-footer"> <div class="comment-time">
-Wednesday, 01 March - 13:22
-</div> <div class="action-links"> <a href="#" class="approve"> <i class="entypo-check"></i>
-Approve
-</a> <a href="#" class="delete"> <i class="entypo-cancel"></i>
-Delete
-</a> <a href="javascript:;.html" onclick="jQuery('#modal-edit-comment').modal('show');" class="edit"> <i class="entypo-pencil"></i>
-Edit
-</a> </div> </div> </div> </li> <li> <div class="comment-checkbox"> <div class="checkbox checkbox-replace"> <input type="checkbox"> </div> </div> <div class="comment-details"> <div class="comment-head">
-     <a>Whether all required PPE used by employees?</a> </div> <p class="comment-text">
-Case oh an that or away sigh do here upon. Acuteness you exquisite ourselves now end forfeited. Enquire ye without it garrets up himself. Interest our nor received followed was. Cultivated an up solicitude mr unpleasant. 
-</p> <div class="comment-footer"> <div class="comment-time">
-Friday, 27 February - 04:56
-</div> <div class="action-links"> <a href="#" class="approve"> <i class="entypo-check"></i>
-Approve
-</a> <a href="#" class="delete"> <i class="entypo-cancel"></i>
-Delete
-</a> <a href="javascript:;.html" onclick="jQuery('#modal-edit-comment').modal('show');" class="edit"> <i class="entypo-pencil"></i>
-Edit
-</a> </div> </div> </div> </li> <li> <div class="comment-checkbox"> <div class="checkbox checkbox-replace"> <input type="checkbox"> </div> </div> <div class="comment-details"> <div class="comment-head">
-     <a >Does workplace lighting work?</a> </div> <p class="comment-text">
-Discovered her his pianoforte insipidity entreaties. Began he at terms meant as fancy. Breakfast arranging he if furniture we described on. Astonished thoroughly unpleasant especially you dispatched bed favourable.
-</p> <div class="comment-footer"> <div class="comment-time">
-Sunday, 11 February - 08:03
-</div> <div class="action-links"> <a href="#" class="approve"> <i class="entypo-check"></i>
-Approve
-</a> <a href="#" class="delete"> <i class="entypo-cancel"></i>
-Delete
-</a> <a href="javascript:;.html" onclick="jQuery('#modal-edit-comment').modal('show');" class="edit"> <i class="entypo-pencil"></i>
-Edit
-</a> </div> </div> </div> </li> <li> <div class="comment-checkbox"> <div class="checkbox checkbox-replace"> <input type="checkbox"> </div> </div> <div class="comment-details"> <div class="comment-head">
-     <a>Is the compressed air system free of audible and visible leaks?	</a> </div> <p class="comment-text">
-At place no walls hopes rooms fully in. Roof hope shy tore leaf joy paid boy. Noisier out brought entered detract because sitting sir. Fat put occasion rendered off humanity has. 
-</p> <div class="comment-footer"> <div class="comment-time">
-Tuesday, 29 January - 18:37
-</div> <div class="action-links"> <a href="#" class="approve"> <i class="entypo-check"></i>
-Approve
-</a> <a href="#" class="delete"> <i class="entypo-cancel"></i>
-Delete
-</a> <a href="javascript:;.html" onclick="jQuery('#modal-edit-comment').modal('show');" class="edit"> <i class="entypo-pencil"></i>
-Edit
-</a> </div> </div> </div> </li> </ul> </div> </div> </div> </div> <div class="filtering"> <div class="row"> <div class="col-sm-3"> <select name="test" class="selectboxit"> <optgroup label="Selected Comments"> <option value="1">Delete</option> <option value="2">Edit</option> <option value="3">Spam</option> <option value="4">Approve</option> </optgroup> </select> </div> <div class="col-sm-9 search-and-pagination"> <div class="pagination-container"> <ul class="pagination"> <li><a href="#"><i class="entypo-left-open-mini"></i></a></li> <li><a href="#">1</a></li> <li class="active"><a href="#">2</a></li> <li><a href="#">3</a></li> <li><a href="#">4</a></li> <li><a href="#">5</a></li> <li><a href="#">6</a></li> <li><a href="#"><i class="entypo-right-open-mini"></i></a></li> </ul> </div> <div class="search-form-contaner"> <form method="get" role="form" class="search-form-full">TS16167567756336: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates Footer <footer class="main"> <div class="pull-right"> <a href="https://themeforest.net/item/neon-bootstrap-admin-theme/6434477?ref=Laborator" target="_blank"><strong>Purchase this theme for $25</strong></a> </div>
-&copy; 2021 <strong>Neon</strong> Admin Theme by <a href="https://laborator.co/" target="_blank">Laborator</a> </footer></div> <!-- TS161675677514914: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <div id="chat" class="fixed" data-current-user="Art Ramadani" data-order-by-status="1" data-max-chat-history="25"> <div class="chat-inner"> <h2 class="chat-header"> <a href="#" class="chat-close"><i class="entypo-cancel"></i></a> <i class="entypo-users"></i>
+
+
+
+
+
+ <div id="chat" class="fixed" data-current-user="Art Ramadani" data-order-by-status="1" data-max-chat-history="25"> <div class="chat-inner"> <h2 class="chat-header"> <a href="#" class="chat-close"><i class="entypo-cancel"></i></a> <i class="entypo-users"></i>
 Chat
 <span class="badge badge-success is-hidden">0</span> </h2> <div class="chat-group" id="group-1"> <strong>Favorites</strong> <a href="#" id="sample-user-123" data-conversation-history="#sample_history"><span class="user-status is-online"></span> <em>Catherine J. Watkins</em></a> <a href="#"><span class="user-status is-online"></span> <em>Nicholas R. Walker</em></a> <a href="#"><span class="user-status is-busy"></span> <em>Susan J. Best</em></a> <a href="#"><span class="user-status is-offline"></span> <em>Brandon S. Young</em></a> <a href="#"><span class="user-status is-idle"></span> <em>Fernando G. Olson</em></a> </div> <div class="chat-group" id="group-2"> <strong>Work</strong> <a href="#"><span class="user-status is-offline"></span> <em>Robert J. Garcia</em></a> <a href="#" data-conversation-history="#sample_history_2"><span class="user-status is-offline"></span> <em>Daniel A. Pena</em></a> <a href="#"><span class="user-status is-busy"></span> <em>Rodrigo E. Lozano</em></a> </div> <div class="chat-group" id="group-3"> <strong>Social</strong> <a href="#"><span class="user-status is-busy"></span> <em>Velma G. Pearson</em></a> <a href="#"><span class="user-status is-offline"></span> <em>Margaret R. Dedmon</em></a> <a href="#"><span class="user-status is-online"></span> <em>Kathleen M. Canales</em></a> <a href="#"><span class="user-status is-offline"></span> <em>Tracy J. Rodriguez</em></a> </div> </div> <!-- conversation template --> <div class="chat-conversation"> <div class="conversation-header"> <a href="#" class="conversation-close"><i class="entypo-cancel"></i></a> <span class="user-status"></span> <span class="display-name"></span> <small></small> </div> <ul class="conversation-body"> </ul> <div class="chat-textarea"> <textarea class="form-control autogrow" placeholder="Type your message"></textarea> </div> </div> </div> <!-- Chat Histories --> <ul class="chat-history" id="sample_history"> <li> <span class="user">Art Ramadani</span> <p>Are you here?</p> <span class="time">09:00</span> </li> <li class="opponent"> <span class="user">Catherine J. Watkins</span> <p>This message is pre-queued.</p> <span class="time">09:25</span> </li> <li class="opponent"> <span class="user">Catherine J. Watkins</span> <p>Whohoo!</p> <span class="time">09:26</span> </li> <li class="opponent unread"> <span class="user">Catherine J. Watkins</span> <p>Do you like it?</p> <span class="time">09:27</span> </li> </ul> <!-- Chat Histories --> <ul class="chat-history" id="sample_history_2"> <li class="opponent unread"> <span class="user">Daniel A. Pena</span> <p>I am going out.</p> <span class="time">08:21</span> </li> <li class="opponent unread"> <span class="user">Daniel A. Pena</span> <p>Call me when you see this message.</p> <span class="time">08:27</span> </li> </ul> </div> <!-- TS16167567755937: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <!-- Edit Comment Modal --> <div class="modal fade" id="modal-edit-comment"> <div class="modal-dialog" style="width: 60%;"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> <h4 class="modal-title">Edit Comment</h4> </div> <div class="modal-body"> <div class="row"> <div class="col-sm-2"> <a href="#"> <img src="images/images-member-2.jpg" class="img-rounded img-responsive"> </a> <br> <span>Comments: 1026</span> <br> <span>Member since: 2007</span> </div> <div class="col-sm-10"> <div class="row"> <div class="col-md-12"> <div class="form-group"> <label for="field-1" class="control-label">Name</label> <input type="text" class="form-control" id="field-3" value="Ksenia Sawicka"> </div> </div> </div> <div class="row"> <div class="col-md-12"> <div class="form-group"> <label for="field-1" class="control-label">Comment</label> <textarea class="form-control" id="field-2" style="min-height: 120px;">Servants contempt as although addition dashwood is procured. Interest in yourself an do of numerous feelings cheerful confined.
 By an packages rejoiced exercise. To ought on am marry rooms doubt music. Mention entered an through company as. Up arrived no painful between. It declared is prospect an insisted pleasure.
@@ -318,7 +225,8 @@ Put use set uncommonly announcing and travelling. Allowance sweetness direction 
 Approve
 </a> <a href="#" class="text-danger bold"> <i class="entypo-cancel"></i>
 Delete
-</a> </p> </div> </div> </div> </div> </div> </div>  -->
+</a> </p> </div> </div> </div> </div> </div>
+
 
 
 <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> <button type="button" class="btn btn-info">Update</button> </div> </div> </div> </div> <!-- Imported styles on this page --> <link rel="stylesheet" href="css/selectboxit-jquery.selectBoxIt.css" id="style-resource-1"> <script src="js/gsap-TweenMax.min.js" id="script-resource-1"></script> <script src="js/js-jquery-ui-1.10.3.minimal.min.js" id="script-resource-2"></script> <script src="js/js-bootstrap.js" id="script-resource-3"></script> <script src="js/js-joinable.js" id="script-resource-4"></script> <script src="js/js-resizeable.js" id="script-resource-5"></script> <script src="js/js-neon-api.js" id="script-resource-6"></script> <script src="js/js-cookies.min.js" id="script-resource-7"></script> <script src="js/selectboxit-jquery.selectBoxIt.min.js" id="script-resource-8"></script> <script src="js/js-neon-chat.js" id="script-resource-9"></script> <!-- JavaScripts initializations and stuff --> <script src="js/js-neon-custom.js" id="script-resource-10"></script> <!-- Demo Settings --> <script src="js/js-neon-demo.js" id="script-resource-11"></script> <script src="js/js-neon-skins.js" id="script-resource-12"></script> <script type="text/javascript">

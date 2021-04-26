@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Kreait\Firebase\Database;
 
+
 class QueController extends Controller
 {
     public function __construct(Database $database)
@@ -21,6 +22,18 @@ public function question(request $request)
         // dd($result);
         return view('questions')->with('result',$result)->with('templatename',$templatename);
 }
+
+public function viewSectionQue(request $request)
+{
+    
+     $database  = app('firebase.database'); 
+     $templatename=$request->input('templatename');
+     $sectionName=$request->input('sectionName');
+        $result = $database->getReference('Users/questions/'.$templatename.'/'.$sectionName)->getValue();
+        // dd($result);
+        return view('sectionQuestion')->with('result',$result)->with('templatename',$templatename)->with('sectionName',$sectionName);
+}
+
 public function question2()
 {
     
@@ -51,7 +64,8 @@ public function store(Request $request)
         $updates = [
             'Users/questions/'.$template_name.'/'.$name => $question,
        ];
-       $database->getReference()->update($updates);
+    //    $database->getReference()->update($updates);
+    dd($questions);
 
 }
 public function section(Request $request)
@@ -66,4 +80,5 @@ public function section(Request $request)
 
 
 }
+
 }
