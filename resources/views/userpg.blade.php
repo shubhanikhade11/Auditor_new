@@ -243,10 +243,15 @@ display:none;
 <div class="row"> <div class="col-md-12"> <div class="panel panel-primary"> <div class="panel-heading"> <div class="panel-title"><h3>Templates</h3></div> <div class="panel-options"> <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a> <a href="#" data-rel="close" class="bg"><i class="entypo-cancel"></i></a> </div> </div> 
 <div class="panel-body"> <div></div> 
 <p class="bs-example">  <p class="bs-example bs-baseline-top">
-<a href="templates"><button type="button" class="btn btn-grey btn-block"><strong>Layer 1</strong></button></a><br>
-<a href=""> <button type="button" class="btn btn-grey btn-block"><strong>Layer 2</strong></button></a><br>
-<a href="templates2"> <button type="button" class="btn btn-grey btn-block"><strong>Layer 3</strong></button></a><br>
-<a href="templates3"> <button type="button" class="btn btn-grey btn-block"><strong>Layer 4</strong></button></a> </p> </div> </div> </div> </div> 
+@foreach ($templates as $template)
+<form method="POST" action="templateEdit">
+        @csrf
+        <input type="hidden" name="name" value="{{$template}}" required="">
+        <input type="submit" class="btn btn-grey btn-block" name="submit" style="margin-right:25%;" value="{{$template}}">
+        </form>
+<!-- <a href="templates"><button type="button" class="btn btn-grey btn-block"><strong>{{$template}}</strong></button></a><br> -->
+@endforeach
+ </p> </div> </div> </div> </div> 
 
 
 <br>
@@ -288,8 +293,48 @@ display:none;
 
  </p> </div> </div> </div> </div>  -->
 
- <a href="xyz"><button class="btn btn-primary btn-icon btn-block" type="button" id="formButton">Add Template <i class="entypo-plus"></i></button></a>
-
+ <!-- <a href="xyz"><button class="btn btn-primary btn-icon btn-block" type="button" id="formButton">Add Template <i class="entypo-plus"></i></button></a> -->
+ <a href="javascript:;.html" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});"><button class="btn btn-primary btn-icon btn-block" onclick="showAjaxModal();"type="button" id="formButton">Add Template <i class="entypo-plus"></i></button></a>
+ <script type="text/javascript">
+function showAjaxModal()
+{
+jQuery('#modal-7').modal('show', {backdrop: 'static'});
+jQuery.ajax({
+url: "https://demo.neontheme.com/data/ajax-content.txt",
+success: function(response)
+{
+jQuery('#modal-7 .modal-body').html(response);
+}
+});
+}
+</script>
+<!-- Modal 6 (Long Modal)--> <form method="post" action="templateSave" enctype="multipart/form-data">
+    {{csrf_field()}}
+    <div class="modal fade" id="modal-6"> <div class="modal-dialog">
+ <div class="modal-content"> <div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> 
+  <h4 class="modal-title">Add Template</h4> </div>
+   <div class="modal-body"> <div class="row"> <div class="col-md-12">
+   
+    <div class="form-group"> <label for="field-1" class="control-label">Template Name:</label>  
+<div><input type="text" class="form-control" placeholder="Name.." name="Name"></div></div>
+   
+   
+<!-- <form name="add_name" id="add_name" >
+            <table class="table table-bordered table-hover" id="dynamic_field">
+              <tr>
+                <td><input type="text" name="question[]" placeholder="" class="form-control name_list" /></td>
+                
+                <td><button type="button" name="add" id="add" class="btn btn-primary">Add More</button></td>  
+              </tr>
+            </table>
+            </div> </div>  -->
+         <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+         <button class="btn btn-success" >Submit</button></div>
+</div> </div> </div> </div> 
+          </form>
+        </div>
+      </div>
  <!-- <p>
     	<input class="btn btn-primary btn-icon btn-block" type="button" value="Show DIV" id="bt" onclick="toggle(this)">
     </p> -->

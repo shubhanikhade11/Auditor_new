@@ -12,13 +12,14 @@ class QueController extends Controller
         $this->database = $database;
     }
 
-public function question()
+public function question(request $request)
 {
     
-     $database = app('firebase.database');
-        $result = $database->getReference('Users/questions/Layer 1 questions')->orderbyValue()->getValue();
+     $database  = app('firebase.database'); 
+     $templatename=$request->input('name');
+        $result = $database->getReference('Users/questions/'.$templatename)->getChildKeys();
         // dd($result);
-        return view('questions')->with('result',$result);
+        return view('questions')->with('result',$result)->with('templatename',$templatename);
 }
 public function question2()
 {
@@ -40,15 +41,29 @@ public function store(Request $request)
 {
     
      $database = app('firebase.database');
-     $Name=$request->input('Name');
-     $Name = str_replace(' ', '', $Name);
-     $name=$Name."_questions";
-     $question=$request->input("question");
+     $name=$request->input('section_name');
+     $template_name=$request->input('template_name');
+    //  $Name = str_replace(' ', '', $Name);
+    //  $name=$Name."_questions";
+     $question=$request->input("mytext");
 
         // return view('templates')->with('result',$result);
         $updates = [
-            'Users/questions/'.$name => $question,
+            'Users/questions/'.$template_name.'/'.$name => $question,
        ];
        $database->getReference()->update($updates);
+
+}
+public function section(Request $request)
+{
+    
+     $database = app('firebase.database');
+     $name=$request->input('template_name');
+    //  $Name = str_replace(' ', '', $Name);
+    //  $name=$Name."_questions";
+    return view('abc')->with('name', $name );
+   
+
+
 }
 }

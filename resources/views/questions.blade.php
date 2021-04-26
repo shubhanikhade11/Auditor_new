@@ -132,19 +132,18 @@ Settings<i class="entypo-cog"></i> </a> </li>
 <li> <a href="login.html">
 Log Out <i class="entypo-logout right"></i> </a> </li> </ul> </div> </div> <hr> 
 <!-- TS16167567752040: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> 
-<ol class="breadcrumb bc-3"> <li> <a href="main-3"><i class="fa-home"></i>Home</a> </li> <li class="active"> <strong>Templates</strong> </li> </ol> <h2>Templates</h2> <section class="comments-env"> 
+<ol class="breadcrumb bc-3"> <li> <a href="main-3"><i class="fa-home"></i>Home</a> </li> 
+<li class="active"> <strong>Templates</strong> </li> </ol> <h2>{{$templatename}}</h2> <section class="comments-env"> 
 
-<div class="filtering"> <div class="row"> <div class="col-sm-3"> <select name="test" class="selectboxit"> 
-    <optgroup label="Selected Layer"> 
-        <option value="1">Layer 1</option> <option value="2">Layer 2</option> <option value="3">Layer 3</option> <option value="4">Layer 4</option> </optgroup> </select>
+
+<div class="filtering"> <div class="row"> <div class="col-sm-3"> </div><br>
         
-         </div>
-        
-         <div class="col-sm-9 search-and-pagination"> <div class="pagination-container"> <ul class="pagination"> <li><a href="#"><i class="entypo-left-open-mini"></i></a></li> <li><a href="#">1</a></li> <li class="active"><a href="#">2</a></li> <li><a href="#">3</a></li> <li><a href="#">4</a></li> <li><a href="#">5</a></li> <li><a href="#">6</a></li> <li><a href="#"><i class="entypo-right-open-mini"></i></a></li> </ul>   </div> </div> </div> </div> <div class="row"> <div class="col-md-12"> <div class="panel panel-primary"> <div class="panel-heading"> <div class="panel-title"> <h4>
+       </div> </div> <div class="row" style="margin:2%";> <div class="col-md-12"> <div class="panel panel-primary"> <div class="panel-heading"> <div class="panel-title"> <h4>
 Write your Questions here..
  </h4> </div> </div>
- <div class="panel-body no-padding"> <ul class="comments-list"> <li> <div class="comment-checkbox"> <div class="checkbox checkbox-replace"> <input type="checkbox"> </div> </div>
-  <div class="comment-details"> <div class="comment-head"> 
+ <div class="panel-body no-padding"> <ul class="comments-list">
+  <li> <div class="comment-checkbox">  </div>
+  <div class="comment-details">  
 
 <script>
  $(document).ready(function() {
@@ -157,7 +156,7 @@ Write your Questions here..
 		e.preventDefault();
 		if(x < max_fields){ //max input box allowed
 			x++; //text box increment
-			$(wrapper).append('<div><br></br><p><label>Add Question</label></p><input type="text" class="form-control" name="mytext[]"/> <Span><ul class="user-info pull-left pull-right-xs pull-none-xsm"> <li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-attention"></i>  </a> </li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-star"></i> </a></li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-db-shape"></i> </a><li></ul> </li></span><br><span><a href="#" class="remove_field" <i class="entypo-cancel"></i>&nbspRemove</a></span><br></div>'); //add input box
+			$(wrapper).append('<div><br></br><p><label>Add Question</label></p><input type="text" class="form-control" name="mytext[]"/> <Span><ul class="user-info pull-left pull-right-xs pull-none-xsm"> <li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-attention"></i>  </a> </li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-star"></i> </a></li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-db-shape"></i> </a><li></ul> </li></span><br><span><a href="#" class="remove_field">&nbspRemove</a></span><br></div>'); //add input box
 		}
 	});
 	
@@ -166,20 +165,35 @@ Write your Questions here..
 	})
 });</script>
 
+    
+ <div class="row"> 
+ <div class="col-sm-12">  
+
+<label Style="text-align: center;">Section Name:</label>
+
+@foreach($result as $section)
+@if($section!='kshatrugan')
+<div><form method="POST" action="#">
+        @csrf
+        <input type="hidden" name="name" value="{{$section}}" required="">
+        <input type="submit" class="btn btn-grey btn-block" name="submit" style="margin-right:25%;" value="{{$section}}">
+        </form></div><br>
+        @else
+             <p>No Section Added. Add Section to review.</p>
+        
+        @endif
+@endforeach
+</div>
+</div>
+</div></div></div>
+<form method="POST" action="addSection">
+        @csrf
+        <input type="hidden" name="template_name" value="{{$templatename}}" required="">
+        <input type="submit" class="btn btn-primary" name="submit" style="margin-right:25%;" value="Add Section">
+        </form>
 
 
-
-<div class="input_fields_wrap">
-    <button class="add_field_button">Add More Questions</button><br>
-   <!-- <p> <label>Add Question</label></p> -->
-    <br>
-    @foreach($result as $user=>$questions) 
-    @foreach($questions as $que)
-    <div><input type="text" value="{{$que['question']}}" class="form-control" name="mytext[]"></div> <br>
-   @endforeach
-   @endforeach
-</div><br></br>
-<button type="submit" class="btn btn-success">Submit</button></div>
+ <!-- TS161675654111277: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates -->
 
  
 

@@ -106,4 +106,25 @@ class FirebaseController extends Controller
             return view('auditors')->with('result',$result);
 
         }
+
+        public function tempDisplay(){
+            $database = app('firebase.database');
+           
+        //   dd($name);
+            // return view('auditors')->with('result',$result);
+            $templates=$database->getReference('Users/questions/')->getChildKeys();
+             return view('userpg')->with('templates',$templates);
+        }
+        public function template(Request $request){
+            $database = app('firebase.database');
+            $name=$request->input('Name');
+           
+
+
+        //   dd($name);
+            // return view('auditors')->with('result',$result);
+            $database->getReference('Users/questions/'.$name)->set(['kshatrugan'=>'']);
+             return redirect('/userpg');
+        }
+        
 }

@@ -135,7 +135,7 @@ Log Out <i class="entypo-logout right"></i> </a> </li> </ul> </div> </div> <hr>
 <ol class="breadcrumb bc-3"> <li> <a href="main-3"><i class="fa-home"></i>Home</a> </li> <li class="active"> <strong>Templates</strong> </li> </ol> <h2>Templates</h2> <section class="comments-env"> 
 
 <div class="filtering"> <div class="row"> <div class="col-sm-3">  
-<div><input type="text" class="form-control" placeholder="Add Name.." name="Name"></div>
+
 <div class="col-sm-9 search-and-pagination"> <div class="pagination-container"> <ul class="pagination">  </ul>   </div> </div> </div> </div> 
 <div class="row"> <div class="col-md-10"> <div class="panel panel-primary"> <div class="panel-heading"> <div class="panel-title"> <h4>
 Write your Questions here..
@@ -155,7 +155,7 @@ Write your Questions here..
 		e.preventDefault();
 		if(x < max_fields){ //max input box allowed
 			x++; //text box increment
-			$(wrapper).append('<div><br></br><p><label>Add Question</label></p><input type="text" class="form-control" name="mytext[]"/> <Span><ul class="user-info pull-left pull-right-xs pull-none-xsm"> <li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-attention"></i>  </a> </li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-star"></i> </a></li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-db-shape"></i> </a><li></ul> </li></span><br><span><a href="#" class="remove_field">&nbspRemove</a></span><br></div>'); //add input box
+			$(wrapper).append('<div><br><input type="text" class="form-control" name="mytext[]"/> <Span><ul class="user-info pull-left pull-right-xs pull-none-xsm"> <li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-attention"></i>  </a> </li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-star"></i> </a></li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-db-shape"></i> </a><li></ul> </li></span><br><span><a href="#" class="remove_field">&nbspRemove</a></span><br></div>'); //add input box
 		}
 	});
 	
@@ -165,23 +165,35 @@ Write your Questions here..
 });</script>
 <form method="post" action="questionSave" enctype="multipart/form-data">
     {{csrf_field()}}
- <div class="row"> <div class="col-sm-3">  
+ <div class="row"> <div class="col-sm-3"> 
+ <input type="hidden" name="template_name" value="{{$name}}" required=""> 
 <label>Section Name:</label>
-<div><input type="text" class="form-control" placeholder="Name.." name="Name" id="txtName"></div></div><br></br><br></br><br>
+<div><input type="text" class="form-control" placeholder="Name.." name="section_name" id="txtName"></div></div><br></br><br></br><br>
 <div class="row"> <div class="col-md-11"> <div class="input_fields_wrap">
     <button class="add_field_button">Add More Questions</button><br>
    <!-- <p> <label>Add Question</label></p> -->
-    <br><div><input type="text" class="form-control" name="mytext[]"></div> <br>
+    <br><div><input type="text" class="form-control" name="mytext[]"></div>
+    <Span><ul class="user-info pull-left pull-right-xs pull-none-xsm"> 
+    <li class="notifications dropdown"> 
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> 
+    <i class="entypo-attention"></i>  </a> </li>
+    <li class="notifications dropdown"> 
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> 
+    <i class="entypo-star"></i> </a></li>
+    <li class="notifications dropdown"> 
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+     <i class="entypo-db-shape"></i> </a><li></ul> </li></span><br>
    
-</div><br></br></div></div></div></div>
-<a href="javascript:;.html" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class="btn btn-primary" onclick="showAjaxModal();">Add Section</a>
-</div></div> 
-<button class="btn btn-success ">Submit</button></div>
 
-</form></div></div></div></div>
+<!-- <a href="javascript:;.html" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class="btn btn-primary" onclick="showAjaxModal();">Add Section</a> -->
+
+
+
+</div></div></div></div>
+<button class="btn btn-success ">Submit</button></form></div>
  <!-- TS161675654111277: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates -->
 
- <script type="text/javascript">
+ <!-- <script type="text/javascript">
 function showAjaxModal()
 {
 jQuery('#modal-7').modal('show', {backdrop: 'static'});
@@ -193,8 +205,9 @@ jQuery('#modal-7 .modal-body').html(response);
 }
 });
 }
-</script>
-<!-- Modal 6 (Long Modal)--> <form method="post" action="questionSave" enctype="multipart/form-data">
+</script> -->
+<!-- Modal 6 (Long Modal)-->
+ <!-- <form method="post" action="questionSave" enctype="multipart/form-data">
     {{csrf_field()}}
     <div class="modal fade" id="modal-6"> <div class="modal-dialog">
  <div class="modal-content"> <div class="modal-header">
@@ -216,7 +229,7 @@ jQuery('#modal-7 .modal-body').html(response);
             </table>
             </div> </div> 
          <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-         <button class="btn btn-success" onclick="SetName();">Submit</button></div>
+         <button class="btn btn-success" >Submit</button></div>
 </div> </div> </div> </div> 
           </form>
         </div>
@@ -225,9 +238,9 @@ jQuery('#modal-7 .modal-body').html(response);
     <div class="col-md-1"></div>
   </div>
 </div>
-</form>
+</form> -->
 
- <input type="button" value="Select" onclick="SetName();" />
+ <!-- <input type="button" value="Select" onclick="SetName();" />
 <script type="text/javascript">
     function SetName() {
         if (window.opener != null && !window.opener.closed) {
@@ -235,9 +248,9 @@ jQuery('#modal-7 .modal-body').html(response);
             txtName.value = document.getElementById("modal-6").value;
         }
         window.close();
-    }
+    } -->
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   $(document).ready(function(){
 
     var i = 1;
@@ -267,7 +280,7 @@ jQuery('#modal-7 .modal-body').html(response);
     });
   });
 </script>
-
+ -->
 
 
 

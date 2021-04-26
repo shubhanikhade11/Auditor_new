@@ -189,8 +189,8 @@ regionStyle:
 });
 </script> 
 
-<h1 class="margin-bottom">Admin</h1> <ol class="breadcrumb 2"> <li> <a href="main.html"><i class="fa-home"></i>Home</a> </li> 
-  <li class="active"> <strong>Admin</strong> </li> </ol> <br>
+<h1 class="margin-bottom">User</h1> <ol class="breadcrumb 2"> <li> <a href="main.html"><i class="fa-home"></i>Home</a> </li> 
+  <li class="active"> <strong>Profile</strong> </li> </ol> <br>
   
   <div class="profile-env"> <header class="row" style="margin-left:5%";> <div class="col-sm-2"> <a href="#" class="profile-picture">
    <img src="{{asset($user['profile_image'])}}" class="img-responsive img-circle"> </a> </div> 

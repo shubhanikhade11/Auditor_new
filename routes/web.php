@@ -58,9 +58,7 @@ Route::get('/settings', function () {
 Route::get('/display', function () {
     return view('display');
 });
-Route::get('/userpg', function () {
-    return view('userpg');
-});
+
 Route::get('/buttons', function () {
     return view('buttons');
 });
@@ -105,11 +103,14 @@ Route::get('/list4', [FirebaseController::class, 'retrieve4'])->name('list.displ
 Route::get('/reports', [FirebaseController::class, 'record'])->name('reports.display');
 
 Route::post('/report', [FirebaseController::class, 'display'])->name('report.display');
-Route::get('/templates', [QueController::class, 'question'])->name('templates.display');
+Route::post('/templateEdit', [QueController::class, 'question'])->name('templates.edit');
 Route::get('/templates2', [QueController::class, 'question2'])->name('templates.display');
 Route::get('/templates3', [QueController::class, 'question3'])->name('templates.display');
 
 Route::post('/questionSave', [QueController::class, 'store'])->name('tasks.store');
-
+Route::post('/templateSave', [FirebaseController::class, 'template'])->name('template.store');
 Route::post('/deleteUser', [FirebaseController::class, 'delete'])->name('delete.user');
 Route::post('/verifyUser', [FirebaseController::class, 'verify'])->name('verify.user');
+
+Route::get('/userpg', [FirebaseController::class, 'tempDisplay'])->name('template.display');
+Route::post('/addSection', [QueController::class, 'section'])->name('add.section');
