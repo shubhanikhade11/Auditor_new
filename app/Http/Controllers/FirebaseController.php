@@ -16,21 +16,21 @@ class FirebaseController extends Controller
     {
         $database = app('firebase.database');
         $result = $database->getReference('Users/Layer 1')->getValue();
-        
+
         return view('auditors')->with('result',$result);
     }
     public function retrieve2(Request $request)
     {
         $database = app('firebase.database');
         $result = $database->getReference('Users/Layer 2')->getValue();
-        
+
         return view('auditors')->with('result',$result);
     }
     public function retrieve3(Request $request)
     {
         $database = app('firebase.database');
         $result = $database->getReference('Users/Layer 3')->getValue();
-        
+
         return view('auditors')->with('result',$result);
     }
 
@@ -38,31 +38,31 @@ class FirebaseController extends Controller
     {
         $database = app('firebase.database');
         $result = $database->getReference('Users/Layer 4')->getValue();
-        
+
         return view('auditors')->with('result',$result);
     }
     public function record(Request $request)
     {
         $database = app('firebase.database');
         $result = $database->getReference('Users/Layer 1/08m3a9yZhKcW7z7IVYMKTwCrqJv1/audit_report/-MXqk2gnmuRvbuzuKnM0')->getValue();
-        
-       
+
+
         $HSE=json_decode($result['HSE'],TRUE);
-      
+
         $People=json_decode($result['People'],TRUE);
-        
+
         $ProcessConfor=json_decode($result['ProcessConfor'],TRUE);
-        
+
         $ProductCon=json_decode($result['ProductCon'],TRUE);
-        
+
         $S5=json_decode($result['S5'],TRUE);
 
         $Traceability=json_decode($result['Traceability'],TRUE);
 
         // dd($HSE,$People,$ProcessConfor,$ProductCon,$S5,$Traceability);
          return view('reports')->with('result',$result)->with('HSE',$HSE)->with('People',$People)->with('ProcessConfor',$ProcessConfor)->with('ProductCon',$ProductCon)->with('S5',$S5)->with('Traceability',$Traceability);
-         
-        
+
+
     }
 
     public function display(Request $request){
@@ -79,7 +79,7 @@ class FirebaseController extends Controller
         }
         $reports = $database->getReference('Users/Layer 1/'.$uid.'/audit_report')->getValue();
         $user = $database->getReference('Users/Layer 1/'.$uid)->getValue();
-        return view('reportDisplay')->with('reports',$reports)->with('name',$name)->with('user',$user); 
+        return view('reportDisplay')->with('reports',$reports)->with('name',$name)->with('user',$user);
     }
 
     public function delete(Request $request)
@@ -109,22 +109,22 @@ class FirebaseController extends Controller
 
         public function tempDisplay(){
             $database = app('firebase.database');
-           
+
         //   dd($name);
             // return view('auditors')->with('result',$result);
-            $templates=$database->getReference('Users/questions/')->getChildKeys();
+            $templates=$database->getReference('Questions/')->getValue();
              return view('userpg')->with('templates',$templates);
         }
         public function template(Request $request){
             $database = app('firebase.database');
             $name=$request->input('Name');
-           
+
 
 
         //   dd($name);
             // return view('auditors')->with('result',$result);
-            $database->getReference('Users/questions/'.$name)->set(['kshatrugan'=>'']);
-             return redirect('/userpg');
+            $database->getReference('Questions/'.$name)->set(['kshatrugan'=>'']);
+             return redirect('/templates');
         }
-        
+
 }

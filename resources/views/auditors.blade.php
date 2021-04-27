@@ -197,7 +197,7 @@ regionStyle:
       <h3>List of Users</h3> </div>
        <div class="panel-options"> <a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a> <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a> <a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a> <a href="#" data-rel="close"><i class="entypo-cancel"></i></a> </div> </div>
         <div class="panel-body"> <table class="table table-responsive">
-         <thead> <tr> <th>Name</th> <th>Email</th> <th>Mobile Number</th><th>Reports</th><th style="text-align:center">Action</th></tr> </thead>
+         <thead> <tr> <th>Name</th> <th>Email</th> <th>Mobile Number</th><th>Profile</th> </thead>
          <tbody>   @foreach ($result as $user )
 
    <tr> <td>{{$user['Name']}}</td> <td>{{$user['email']}}</td><td> {{$user['mobile']}}</td>
@@ -206,23 +206,6 @@ regionStyle:
                                             <input type="hidden" name="name" value="{{$user['Name']}}" required="">
                                             <input type="submit" name="submit" style="margin-right:25%;" value="View">
                                           </form></td>
-                                        <td><form method="POST" action="#">
-                                            @csrf
-                                            <input type="hidden" name="name" value="{{$user['Name']}}" required="">
-                                            <input type="submit" name="submit" style="margin-right:25%;" value="Edit">
-                                        </form></td>
-                                        <td><form method="POST" action="{{ route('verify.user') }}">
-                                            @csrf
-                                            <input type="hidden" name="name" value="{{$user['Name']}}" required="">
-                                            <input type="submit" name="submit" style="margin-right:25%;" value="Verify">
-                                          </form></td>
-                                          <td>
-        <form method="POST" action="{{ route('delete.user') }}">
-                                            @csrf
-                                            <input type="hidden" name="name" value="{{$user['Name']}}" required="">
-                                            <input type="submit" name="submit" style="margin-right:25%;" value="Delete">
-                                          </form></td>
-
 </tr>@endforeach </tbody> </table> </div> </div> </div>
 
       <!-- TS161675642412610: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <!-- Footer --> <footer class="main"> <div class="pull-right"> </div></footer></div>

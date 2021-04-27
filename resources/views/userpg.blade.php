@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"> <head> 
+<html lang="en"> <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1"> 
- <meta name="description" content="Neon Admin Panel"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="Neon Admin Panel">
  <meta name="author" content="Laborator.co">
   <link rel="icon" href="favicons/images-favicon.ico">
-   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141030632-1"></script> 
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141030632-1"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -44,39 +44,39 @@
 
    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'UA-141030632-1', {"groups":"laborator_analytics","link_attribution":true,"linker":{"accept_incoming":true,"domains":["laborator.co","kaliumtheme.com","oxygentheme.com","neontheme.com","themeforest.net","laborator.ticksy.com"]}});</script> <title>Auditor</title> <link rel="stylesheet" href="css/no-theme-jquery-ui-1.10.3.custom.min.css" id="style-resource-1"> <link rel="stylesheet" href="css/css-entypo.css" id="style-resource-2"> <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic" id="style-resource-3"> <link rel="stylesheet" href="css/css-bootstrap.css" id="style-resource-4"> <link rel="stylesheet" href="css/css-neon-core.css" id="style-resource-5"> <link rel="stylesheet" href="css/css-neon-theme.css" id="style-resource-6"> <link rel="stylesheet" href="css/css-neon-forms.css" id="style-resource-7"> <link rel="stylesheet" href="css/css-custom.css" id="style-resource-8"> <script src="js/js-jquery-1.11.3.min.js"></script> <!--[if lt IE 9]><script src="https://demo.neontheme.com/assets/js/ie8-responsive-file-warning.js"></script><![endif]--> <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]--> <!-- TS1616756424: Neon - Responsive Admin Template created by Laborator --> </head> <body class="page-body page-fade gray" data-url="https://demo.neontheme.com"> <!-- TS161675642416476: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <div class="page-container"> <!-- TS1616756424754: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <div class="sidebar-menu"> <div class="sidebar-menu-inner"> <header class="logo-env"> <!-- logo --> <div class="logo"> <a href="main-3"> <H1> <font color="white">Auditor</font></H1> </a> </div> <!-- logo collapse icon --> 
-<div class="sidebar-collapse"> <a href="#" class="sidebar-collapse-icon"><!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition --> <i class="entypo-menu"></i> </a> </div> <!-- open/close menu icon (do not remove if you want to enable menu on mobile devices) --> 
+gtag('config', 'UA-141030632-1', {"groups":"laborator_analytics","link_attribution":true,"linker":{"accept_incoming":true,"domains":["laborator.co","kaliumtheme.com","oxygentheme.com","neontheme.com","themeforest.net","laborator.ticksy.com"]}});</script> <title>Auditor</title> <link rel="stylesheet" href="css/no-theme-jquery-ui-1.10.3.custom.min.css" id="style-resource-1"> <link rel="stylesheet" href="css/css-entypo.css" id="style-resource-2"> <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic" id="style-resource-3"> <link rel="stylesheet" href="css/css-bootstrap.css" id="style-resource-4"> <link rel="stylesheet" href="css/css-neon-core.css" id="style-resource-5"> <link rel="stylesheet" href="css/css-neon-theme.css" id="style-resource-6"> <link rel="stylesheet" href="css/css-neon-forms.css" id="style-resource-7"> <link rel="stylesheet" href="css/css-custom.css" id="style-resource-8"> <script src="js/js-jquery-1.11.3.min.js"></script> <!--[if lt IE 9]><script src="https://demo.neontheme.com/assets/js/ie8-responsive-file-warning.js"></script><![endif]--> <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]--> <!-- TS1616756424: Neon - Responsive Admin Template created by Laborator --> </head> <body class="page-body page-fade gray" data-url="https://demo.neontheme.com"> <!-- TS161675642416476: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <div class="page-container"> <!-- TS1616756424754: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <div class="sidebar-menu"> <div class="sidebar-menu-inner"> <header class="logo-env"> <!-- logo --> <div class="logo"> <a href="main-3"> <H1> <font color="white">Auditor</font></H1> </a> </div> <!-- logo collapse icon -->
+<div class="sidebar-collapse"> <a href="#" class="sidebar-collapse-icon"><!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition --> <i class="entypo-menu"></i> </a> </div> <!-- open/close menu icon (do not remove if you want to enable menu on mobile devices) -->
 
 <div class="sidebar-mobile-menu visible-xs"> <a href="#" class="with-animation">
-  <!-- add class "with-animation" to support animation --> <i class="entypo-menu"></i> </a> </div> </header> 
-  <ul id="main-menu" class="main-menu"> 
+  <!-- add class "with-animation" to support animation --> <i class="entypo-menu"></i> </a> </div> </header>
+  <ul id="main-menu" class="main-menu">
   <li> <a href="issues"><i class="entypo-gauge"></i><span class="title">Dashboard</span></a> </li>
-       <ul class="visible"> 
+       <ul class="visible">
          <!-- <li class="has-sub"> <ul> <li> <a href="black.html"><span class="title">Black Skin</span></a> </li> <li> <a href="white.html"><span class="title">White Skin</span></a> </li> <li> <a href="purple.html"><span class="title">Purple Skin</span></a> </li> <li> <a href="cafe.html"><span class="title">Cafe Skin</span></a> </li> <li> <a href="red.html"><span class="title">Red Skin</span></a> </li> <li> <a href="green.html"><span class="title">Green Skin</span></a> </li> <li> <a href="yellow.html"><span class="title">Yellow Skin</span></a> </li> <li> <a href="blue.html"><span class="title">Blue Skin</span></a> </li> <li> <a href="facebook.html"><span class="title">Facebook Skin</span><span class="badge badge-secondary badge-roundless">New</span></a> </li> </ul> </li>  -->
-          </a> </li> </ul> </li> 
+          </a> </li> </ul> </li>
           <!-- <li> <a href="userpg"><i class="entypo-user"></i><span class="title">Auditors</span></a> </li> -->
 
           <ul id="main-menu" class="main-menu"> <li class="has-sub">
-               <a href=""><i class="entypo-user"></i><span class="title">Auditor</span></a> <ul> <li> 
+               <a href=""><i class="entypo-user"></i><span class="title">Auditor</span></a> <ul> <li>
                    <a href="list1"><span class="title">Layer 1</span></a> </li>
-                    <li> <a href="list2"><span class="title">Layer 2</span></a> </li> 
+                    <li> <a href="list2"><span class="title">Layer 2</span></a> </li>
                     <li><a href="list3"><span class="title">Layer 3</span></a> </li>
                     <li><a href="list4"><span class="title">Layer 4</span></a> </li></ul>
           <li> <a href="templates"><i class="glyphicon glyphicon-book"></i><span class="title">Templates</span></a> </li>
           <li> <a href="inspections"><i class="glyphicon glyphicon-check"></i><span class="title">Inspections</span></a> </li>
-          <li class="has-sub"> 
+          <li class="has-sub">
         <!-- <ul> <li> <a href="layout-api.html"><span class="title">Layout API</span></a> </li> <li> <a href="collapsed-sidebar.html"><span class="title">Collapsed Sidebar</span></a> </li> <li> <a href="fixed-sidebar.html"><span class="title">Fixed Sidebar</span></a> </li> <li> <a href="chat-open.html"><span class="title">Chat Open</span></a> </li> <li> <a href="horizontal-menu-boxed.html"><span class="title">Horizontal Menu Boxed</span></a> </li> <li> <a href="horizontal-menu-fluid.html"><span class="title">Horizontal Menu Fluid</span></a> </li> <li> <a href="mixed-menus.html"><span class="title">Mixed Menus</span></a> </li> <li> <a href="right-sidebar.html"><span class="title">Right Sidebar</span></a> </li> <li> <a href="both-menus-right-sidebar.html"><span class="title">Both Menus (Right Sidebar)</span></a> </li> <li class="has-sub"> <a href="page-transition-fade.html"><span class="title">Page Enter Transitions</span></a> <ul> <li> <a href="page-transition-fade.html"><span class="title">Fade Scale</span></a> </li> <li> <a href="page-transition-left-in.html"><span class="title">Left In</span></a> </li> <li> <a href="page-transition-right-in.html"><span class="title">Right In</span></a> </li> <li> <a href="page-transition-fade-only.html"><span class="title">Fade Only</span></a> </li> </ul> </li> <li> <a href="boxed.html"><span class="title">Boxed Layout</span></a> </li> </ul> </li> <li class="has-sub">  <ul> <li> <a href="panels.html"><span class="title">Panels</span></a> </li> <li> <a href="tiles.html"><span class="title">Tiles</span></a> </li> <li> <a href="buttons.html"><span class="title">Buttons</span></a> </li> <li> <a href="typography.html"><span class="title">Typography</span></a> </li> <li> <a href="tabs-accordions.html"><span class="title">Tabs &amp; Accordions</span></a> </li> <li> <a href="tooltips-popovers.html"><span class="title">Tooltips &amp; Popovers</span></a> </li> <li> <a href="navbars.html"><span class="title">Navbars</span></a> </li> <li> <a href="breadcrumbs.html"><span class="title">Breadcrumbs</span></a> </li> <li> <a href="s.html"><span class="title">Badges &amp; Labels</span></a> </li> <li> <a href="progress-bars.html"><span class="title">Progress Bars</span></a> </li> <li> <a href="modals.html"><span class="title">Modals</span></a> </li> <li> <a href="blockquotes.html"><span class="title">Blockquotes</span></a> </li> <li> <a href="alerts.html"><span class="title">Alerts</span></a> </li> <li> <a href="pagination.html"><span class="title">Pagination</span></a> </li> </ul> </li> -->
          <!-- <li class="has-sub"> <a href="main.html"><i class="entypo-mail"></i><span class="title">Mailbox</span><span class="badge badge-secondary">8</span></a> <ul> <li> <a href="main.html"><i class="entypo-inbox"></i><span class="title">Inbox</span></a> </li> <li> <a href="compose.html"><i class="entypo-pencil"></i><span class="title">Compose Message</span></a> </li> <li> <a href="message.html"><i class="entypo-attach"></i><span class="title">View Message</span></a> </li> </ul> </li>  -->
         <!-- <li class="has-sub"> <a href="main.html"><i class="entypo-doc-text"></i><span class="title">Forms</span></a> <ul> <li> <a href="main.html"><span class="title">Basic Elements</span></a> </li> <li> <a href="advanced.html"><span class="title">Advanced Plugins</span></a> </li> <li> <a href="wizard.html"><span class="title">Form Wizard</span></a> </li> <li> <a href="validation.html"><span class="title">Data Validation</span></a> </li> <li> <a href="masks.html"><span class="title">Input Masks</span></a> </li> <li> <a href="sliders.html"><span class="title">Sliders</span></a> </li> <li> <a href="file-upload.html"><span class="title">File Upload</span></a> </li> <li> <a href="wysiwyg.html"><span class="title">Editors</span></a> </li> </ul> </li> <li class="has-sub"> <a href="main.html"><i class="entypo-window"></i><span class="title">Tables</span></a> <ul> <li> <a href="main.html"><span class="title">Basic Tables</span></a> </li> <li> <a href="datatable.html"><span class="title">Data Tables</span></a> </li> </ul> </li>  -->
         <!-- <li class="has-sub"> <a href="icons.html"><i class="entypo-bag"></i><span class="title">Extra</span><span class="badge badge-info badge-roundless">New Items</span></a> <ul> <li class="has-sub"> <a href="icons.html"><span class="title">Icons</span><span class="badge badge-success">3</span></a> <ul> <li> <a href="icons-fontawesome.html"><span class="title">Font Awesome</span></a> </li> <li> <a href="icons-entypo.html"><span class="title">Entypo</span></a> </li> <li> <a href="icons-glyphicons.html"><span class="title">Glyph Icons</span></a> </li> </ul> </li> <li> <a href="portlets.html"><span class="title">Portlets</span></a> </li> <li class="has-sub"> <a href="google-maps.html"><span class="title">Maps</span></a> <ul> <li> <a href="google-maps.html"><span class="title">Google Maps</span></a> </li> <li> <a href="vector-maps.html"><span class="title">Vector Maps</span></a> </li> </ul> </li> <li> <a href="chat-api.html"><span class="title">Chat API</span></a> </li> <li> <a href="calendar.html"><span class="title">Calendar</span></a> </li> <li> <a href="calendar-2.html"><span class="title">Calendar 2</span><span class="badge badge-secondary badge-roundless">New</span></a> </li> <li> <a href="notes.html"><span class="title">Notes</span></a> </li> <li> <a href="lockscreen.html"><span class="title">Lockscreen</span></a> </li> <li> <a href="login.html"><span class="title">Login</span></a> </li> <li> <a href="register.html"><span class="title">Register</span></a> </li> <li> <a href="invoice.html"><span class="title">Invoice</span></a> </li> <li> <a href="members.html"><span class="title">Members</span></a> </li> <li class="has-sub"> <a href="gallery.html"><span class="title">Gallery</span></a> <ul> <li> <a href="gallery.html"><span class="title">Albums</span></a> </li> <li> <a href="gallery-single.html"><span class="title">Single Album</span></a> </li> </ul> </li> <li> <a href="profile.html"><span class="title">Profile</span></a> </li> <li> <a href="404.html"><span class="title">404 Page</span></a> </li> <li> <a href="blank-page.html"><span class="title">Blank Page</span></a> </li> <li> <a href="comments.html"><span class="title">Comments</span></a> </li> <li> <a href="timeline.html"><span class="title">Timeline</span></a> </li> <li> <a href="timeline-centered.html"><span class="title">Timeline Centered</span></a> </li> <li> <a href="tocify.html"><span class="title">Tocify</span></a> </li> <li> <a href="notifications.html"><span class="title">Notifications</span></a> </li> <li> <a href="new-post.html"><span class="title">New Post</span></a> </li> <li> <a href="settings.html"><span class="title">Settings</span></a> </li> <li> <a href="scrollbox.html"><span class="title">Scrollbox</span></a> </li> <li> <a href="image-crop.html"><span class="title">Image Crop</span></a> </li> <li> <a href="search.html"><span class="title">Search Page</span></a> </li> <li> <a href="language-selector.html"><span class="title">Language Selector</span></a> </li> <li> <a href="nestable.html"><span class="title">Nestable Lists</span></a> </li> <li> <a href="file-tree.html"><span class="title">File Tree</span></a> </li> <li> <a href="load-progress.html"><span class="title">Load Progress</span></a> </li> </ul> </li> -->
-        
+
         <li> <a href="issues"><i class="entypo-clipboard"></i><span class="title">Issues</span></a> </li>
         <li> <a href="create"><i class="entypo-calendar"></i><span class="title">Schedule</span></a> </li>
         <li> <a href="admin"><i class="entypo-user"></i><span class="title">Admin Profile</span></a> </li>
            </li> </ul> </div> </div>
-         
-         <div class="main-content"> <!-- TS161675642411050: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <div class="row"> <!-- Profile Info and Notifications --> <div class="col-md-6 col-sm-8 clearfix"> <ul class="user-info pull-left pull-none-xsm"> <!-- Profile Info --> <li class="profile-info dropdown"><!-- add class "pull-right" if you want to place this from right --> 
-         
+
+         <div class="main-content"> <!-- TS161675642411050: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <div class="row"> <!-- Profile Info and Notifications --> <div class="col-md-6 col-sm-8 clearfix"> <ul class="user-info pull-left pull-none-xsm"> <!-- Profile Info --> <li class="profile-info dropdown"><!-- add class "pull-right" if you want to place this from right -->
+
          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="images/images-thumb-1@2x.png" alt="" class="img-circle" width="44">
 MAHLE ANAND
 </a> <ul class="dropdown-menu"> <!-- Reverse Caret --> <li class="caret"> <!-- Profile sub-links --> </li><li> <a href="timeline.html"> <i class="entypo-user"></i>
@@ -114,7 +114,7 @@ This ain&rsquo;t our first item, it is the best of the rest.
 </span> </a> </li> <li class="active"> <a href="#"> <span class="image pull-right"> <img src="images/images-thumb-2@2x.png" width="44" alt="" class="img-circle"> </span> <span class="line"> <strong>Salma Nyberg</strong>
 - 2 days ago
 </span> <span class="line desc small">
-Oh he decisively impression attachment friendship so if everything. 
+Oh he decisively impression attachment friendship so if everything.
 </span> </a> </li> <li> <a href="#"> <span class="image pull-right"> <img src="images/images-thumb-3@2x.png" width="44" alt="" class="img-circle"> </span> <span class="line">
 Hayden Cartwright
 - a week ago
@@ -131,7 +131,7 @@ Settings<i class="entypo-cog"></i> </a> </li>
 
 <li> <a href="login.html">
 Log Out <i class="entypo-logout right"></i> </a> </li> </ul> </div> </div> <hr>   <!-- TS16167564246526: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <script type="text/javascript">
-jQuery(document).ready(function($) 
+jQuery(document).ready(function($)
 {
 // Sample Toastr Notification
 // setTimeout(function()
@@ -154,7 +154,7 @@ jQuery(document).ready(function($)
 // toastr.success("You have been awarded with 1 year free subscription. Enjoy it!", "Account Subcription Updated", opts);
 // }, 3000);
 
-  
+
 // $(".daily-visitors").sparkline([1,5,5.5,5.4,5.8,6,8,9,13,12,10,11.5,9,8,5,8,9], {
 //   type: 'line',
 //   width: '100%',
@@ -172,7 +172,7 @@ jQuery(document).ready(function($)
 //  });
 
 
- 
+
  $("#calendar").fullCalendar({
 header: {
 left: '',
@@ -184,7 +184,7 @@ height: 200,
 });
 
 
-</script> 
+</script>
 
 <div class="row"> <div class="col-md-3 col-sm-6"> </div>
  <br> <div class="row"> <div class="col-md-9"> <script type="text/javascript">
@@ -209,7 +209,7 @@ focusOn: { x: 0.5, y: 0.7, scale: 3 },
   "stroke-opacity": 0.3,
      }
   },
-regionStyle: 
+regionStyle:
 {
  initial: {
   fill: '#e9e9e9',
@@ -235,15 +235,18 @@ regionStyle:
 display:none;
 
 }
-</script> 
+</script>
 
-<!-- TS16167565253788: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> 
-<ol class="breadcrumb bc-3"> <li> <a href="main-3"><i class="fa-home"></i>Home</a> </li> <li> <a href="userpg">Templates</a>  </li> </ol> 
+<!-- TS16167565253788: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates -->
+<ol class="breadcrumb bc-3"> <li> <a href="main-3"><i class="fa-home"></i>Home</a> </li> <li> <a href="userpg">Templates</a>  </li> </ol>
 <!-- <h2>Buttons &amp; Pagination</h2> <br>  -->
-<div class="row"> <div class="col-md-12"> <div class="panel panel-primary"> <div class="panel-heading"> <div class="panel-title"><h3>Templates</h3></div> <div class="panel-options"> <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a> <a href="#" data-rel="close" class="bg"><i class="entypo-cancel"></i></a> </div> </div> 
-<div class="panel-body"> <div></div> 
+<div class="row"> <div class="col-md-12"> <div class="panel panel-primary"> <div class="panel-heading"> <div class="panel-title"><h3>Templates</h3></div> <div class="panel-options"> <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a> <a href="#" data-rel="close" class="bg"><i class="entypo-cancel"></i></a> </div> </div>
+<div class="panel-body"> <div></div>
 <p class="bs-example">  <p class="bs-example bs-baseline-top">
-@foreach ($templates as $template)
+@if ($templates!=null)
+
+
+@foreach ($templates as $template=>$value)
 <form method="POST" action="templateEdit">
         @csrf
         <input type="hidden" name="name" value="{{$template}}" required="">
@@ -251,14 +254,15 @@ display:none;
         </form>
 <!-- <a href="templates"><button type="button" class="btn btn-grey btn-block"><strong>{{$template}}</strong></button></a><br> -->
 @endforeach
- </p> </div> </div> </div> </div> 
+@endif
+ </p> </div> </div> </div> </div>
 
 
 <br>
-<!-- <div class="row" id="bt" onclick="toggle(this)" > <div class="col-md-12"> <div class="panel panel-primary"> <div class="panel-heading" > <div class="panel-title"  ><h3>Add  A New Template </h3></div> <div class="panel-options"> <a href="#" data-rel="collapse"><i class="entypo-down-open" id="bt" onclick="toggle(this)"></i></a> <a href="#" data-rel="close" class="bg"><i class="entypo-cancel"></i></a> </div> </div> 
+<!-- <div class="row" id="bt" onclick="toggle(this)" > <div class="col-md-12"> <div class="panel panel-primary"> <div class="panel-heading" > <div class="panel-title"  ><h3>Add  A New Template </h3></div> <div class="panel-options"> <a href="#" data-rel="collapse"><i class="entypo-down-open" id="bt" onclick="toggle(this)"></i></a> <a href="#" data-rel="close" class="bg"><i class="entypo-cancel"></i></a> </div> </div>
 <div class="panel-body" style="border:solid 0px #ddd; padding:10px; display:none;" id="cont">
           <div>
-          
+
 
 <label>Template Name:</label>
 <div><input class="form-control" id="" name="name" /></div>
@@ -289,7 +293,7 @@ display:none;
             document.getElementById(ele.id).value = 'Hide DIV';
         }
     }
-</script> <div></div> 
+</script> <div></div>
 
  </p> </div> </div> </div> </div>  -->
 
@@ -312,26 +316,26 @@ jQuery('#modal-7 .modal-body').html(response);
     {{csrf_field()}}
     <div class="modal fade" id="modal-6"> <div class="modal-dialog">
  <div class="modal-content"> <div class="modal-header">
-  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> 
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
   <h4 class="modal-title">Add Template</h4> </div>
    <div class="modal-body"> <div class="row"> <div class="col-md-12">
-   
-    <div class="form-group"> <label for="field-1" class="control-label">Template Name:</label>  
+
+    <div class="form-group"> <label for="field-1" class="control-label">Template Name:</label>
 <div><input type="text" class="form-control" placeholder="Name.." name="Name"></div></div>
-   
-   
+
+
 <!-- <form name="add_name" id="add_name" >
             <table class="table table-bordered table-hover" id="dynamic_field">
               <tr>
                 <td><input type="text" name="question[]" placeholder="" class="form-control name_list" /></td>
-                
-                <td><button type="button" name="add" id="add" class="btn btn-primary">Add More</button></td>  
+
+                <td><button type="button" name="add" id="add" class="btn btn-primary">Add More</button></td>
               </tr>
             </table>
             </div> </div>  -->
-         <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+         <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
          <button class="btn btn-success" >Submit</button></div>
-</div> </div> </div> </div> 
+</div> </div> </div> </div>
           </form>
         </div>
       </div>
@@ -340,31 +344,31 @@ jQuery('#modal-7 .modal-body').html(response);
     </p> -->
 
 
-<!-- TS16167565253788: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> 
+<!-- TS16167565253788: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates -->
 
 <!-- <h2>Buttons &amp; Pagination</h2> <br>  -->
-<!-- <div class="row"> <div class="col-md-12"> <div class="panel panel-primary"> <div class="panel-heading"> <div class="panel-title"><h3>Reports</h3></div> <div class="panel-options"> <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a> <a href="#" data-rel="close" class="bg"><i class="entypo-cancel"></i></a> </div> </div> 
-<div class="panel-body"> <div></div> 
+<!-- <div class="row"> <div class="col-md-12"> <div class="panel panel-primary"> <div class="panel-heading"> <div class="panel-title"><h3>Reports</h3></div> <div class="panel-options"> <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a> <a href="#" data-rel="close" class="bg"><i class="entypo-cancel"></i></a> </div> </div>
+<div class="panel-body"> <div></div>
 <p class="bs-example">  <p class="bs-example bs-baseline-top">
 <a href="list1"><button type="button" class="btn btn-grey btn-block"><strong>Layer 1</strong></button></a><br>
 <a href="list2"> <button type="button" class="btn btn-grey btn-block"><strong>Layer 2</strong></button></a><br>
 <a href="list3"> <button type="button" class="btn btn-grey btn-block"><strong>Layer 3</strong></button></a> </p> </div> </div> </div> </div>  -->
 
-      <!-- <div class="row"> <div class="col-sm-8"> <div class="panel panel-primary panel-table"> <div class="panel-heading"> <div class="panel-title"> 
+      <!-- <div class="row"> <div class="col-sm-8"> <div class="panel panel-primary panel-table"> <div class="panel-heading"> <div class="panel-title">
       <h3>User List</h3> <span>Layers</span> </div>
-       <div class="panel-options"> <a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a> 
-       <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a> 
-       <a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a> 
-       <a href="#" data-rel="close"><i class="entypo-cancel"></i></a> </div> </div> 
-       <div class="panel-body"> <table class="table table-responsive"> 
+       <div class="panel-options"> <a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a>
+       <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
+       <a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a>
+       <a href="#" data-rel="close"><i class="entypo-cancel"></i></a> </div> </div>
+       <div class="panel-body"> <table class="table table-responsive">
            <thead> <tr>  <th class="text-center"><a href="list1"> Layer 1</a></th> </tr> </thead>
            <thead> <tr>  <th class="text-center"><a href="list2"> Layer 2</a></th> </tr> </thead>
-        <thead> <tr>  <th class="text-center"><a href="list3"> Layer 3</a></th> </tr> </thead> </table> </div> </div> </div> 
-        <div class="row"> <div class="col-sm-8"> <div class="panel panel-primary panel-table"> <div class="panel-heading"> <div class="panel-title"> 
-      <h3>Top Grossing</h3> <span>Weekly statistics from AppStore</span> </div> <div class="panel-options"> <a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a> <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a> <a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a> <a href="#" data-rel="close"><i class="entypo-cancel"></i></a> </div> </div> <div class="panel-body"> <table class="table table-responsive"> <thead> <tr> <th>App Name</th> <th>Download</th> <th class="text-center">Graph</th> </tr> </thead> <tbody> <tr> <td>Flappy Bird</td> <td>2,215,215</td> <td class="text-center"><span class="top-apps">4,3,5,4,5,6,3,2,5,3</span></td> </tr> <tr> <td>Angry Birds</td> <td>1,001,001</td> <td class="text-center"><span class="top-apps">3,2,5,4,3,6,7,5,7,9</span></td> </tr> <tr> <td>Asphalt 8</td> <td>998,003</td> <td class="text-center"><span class="top-apps">1,3,4,3,5,4,3,6,9,8</span></td> </tr> <tr> <td>Viber</td> <td>512,015</td> <td class="text-center"><span class="top-apps">9,2,5,7,2,4,6,7,2,6</span></td> </tr> <tr> <td>Whatsapp</td> <td>504,135</td> <td class="text-center"><span class="top-apps">1,4,5,4,4,3,2,5,4,3</span></td> </tr> </tbody> </table> </div> </div> </div> 
+        <thead> <tr>  <th class="text-center"><a href="list3"> Layer 3</a></th> </tr> </thead> </table> </div> </div> </div>
+        <div class="row"> <div class="col-sm-8"> <div class="panel panel-primary panel-table"> <div class="panel-heading"> <div class="panel-title">
+      <h3>Top Grossing</h3> <span>Weekly statistics from AppStore</span> </div> <div class="panel-options"> <a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a> <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a> <a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a> <a href="#" data-rel="close"><i class="entypo-cancel"></i></a> </div> </div> <div class="panel-body"> <table class="table table-responsive"> <thead> <tr> <th>App Name</th> <th>Download</th> <th class="text-center">Graph</th> </tr> </thead> <tbody> <tr> <td>Flappy Bird</td> <td>2,215,215</td> <td class="text-center"><span class="top-apps">4,3,5,4,5,6,3,2,5,3</span></td> </tr> <tr> <td>Angry Birds</td> <td>1,001,001</td> <td class="text-center"><span class="top-apps">3,2,5,4,3,6,7,5,7,9</span></td> </tr> <tr> <td>Asphalt 8</td> <td>998,003</td> <td class="text-center"><span class="top-apps">1,3,4,3,5,4,3,6,9,8</span></td> </tr> <tr> <td>Viber</td> <td>512,015</td> <td class="text-center"><span class="top-apps">9,2,5,7,2,4,6,7,2,6</span></td> </tr> <tr> <td>Whatsapp</td> <td>504,135</td> <td class="text-center"><span class="top-apps">1,4,5,4,4,3,2,5,4,3</span></td> </tr> </tbody> </table> </div> </div> </div>
  -->
 
-      <!-- TS161675642412610: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <!-- Footer --> <footer class="main"> <div class="pull-right"> </div></footer></div> 
+      <!-- TS161675642412610: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <!-- Footer --> <footer class="main"> <div class="pull-right"> </div></footer></div>
 <!-- TS16167564244832: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <div id="chat" class="fixed" data-current-user="Art Ramadani" data-order-by-status="1" data-max-chat-history="25"> <div class="chat-inner"> <h2 class="chat-header"> <a href="#" class="chat-close"><i class="entypo-cancel"></i></a> <i class="entypo-users"></i>
 <!-- Imported styles on this page --> <link rel="stylesheet" href="css/jvectormap-jquery-jvectormap-1.2.2.css" id="style-resource-1"> <link rel="stylesheet" href="css/rickshaw-rickshaw.min.css" id="style-resource-2"> <script src="js/gsap-TweenMax.min.js" id="script-resource-1"></script> <script src="js/js-jquery-ui-1.10.3.minimal.min.js" id="script-resource-2"></script> <script src="js/js-bootstrap.js" id="script-resource-3"></script> <script src="js/js-joinable.js" id="script-resource-4"></script> <script src="js/js-resizeable.js" id="script-resource-5"></script> <script src="js/js-neon-api.js" id="script-resource-6"></script> <script src="js/js-cookies.min.js" id="script-resource-7"></script> <script src="js/jvectormap-jquery-jvectormap-1.2.2.min.js" id="script-resource-8"></script> <script src="js/jvectormap-jquery-jvectormap-europe-merc-en.js" id="script-resource-9"></script> <script src="js/js-jquery.sparkline.min.js" id="script-resource-10"></script> <script src="js/vendor-d3.v3.js" id="script-resource-11"></script> <script src="js/rickshaw-rickshaw.min.js" id="script-resource-12"></script> <script src="js/js-raphael-min.js" id="script-resource-13"></script> <script src="js/js-morris.min.js" id="script-resource-14"></script> <script src="js/js-toastr.js" id="script-resource-15"></script> <script src="js/fullcalendar-fullcalendar.min.js" id="script-resource-16"></script> <script src="js/js-neon-chat.js" id="script-resource-17"></script> <!-- JavaScripts initializations and stuff --> <script src="js/js-neon-custom.js" id="script-resource-18"></script> <!-- Demo Settings --> <script src="js/js-neon-demo.js" id="script-resource-19"></script> <script src="js/js-neon-skins.js" id="script-resource-20"></script> <script type="text/javascript">
  var _gaq = _gaq || [];

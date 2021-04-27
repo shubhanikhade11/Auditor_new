@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"> <head> 
+<html lang="en"> <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1"> 
- <meta name="description" content="Neon Admin Panel"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="Neon Admin Panel">
  <meta name="author" content="Laborator.co">
   <link rel="icon" href="favicons/images-favicon.ico">
-   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141030632-1"></script> 
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141030632-1"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -44,39 +44,39 @@
 
    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'UA-141030632-1', {"groups":"laborator_analytics","link_attribution":true,"linker":{"accept_incoming":true,"domains":["laborator.co","kaliumtheme.com","oxygentheme.com","neontheme.com","themeforest.net","laborator.ticksy.com"]}});</script> <title>Auditor</title> <link rel="stylesheet" href="css/no-theme-jquery-ui-1.10.3.custom.min.css" id="style-resource-1"> <link rel="stylesheet" href="css/css-entypo.css" id="style-resource-2"> <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic" id="style-resource-3"> <link rel="stylesheet" href="css/css-bootstrap.css" id="style-resource-4"> <link rel="stylesheet" href="css/css-neon-core.css" id="style-resource-5"> <link rel="stylesheet" href="css/css-neon-theme.css" id="style-resource-6"> <link rel="stylesheet" href="css/css-neon-forms.css" id="style-resource-7"> <link rel="stylesheet" href="css/css-custom.css" id="style-resource-8"> <script src="js/js-jquery-1.11.3.min.js"></script> <!--[if lt IE 9]><script src="https://demo.neontheme.com/assets/js/ie8-responsive-file-warning.js"></script><![endif]--> <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]--> <!-- TS1616756424: Neon - Responsive Admin Template created by Laborator --> </head> <body class="page-body page-fade gray" data-url="https://demo.neontheme.com"> <!-- TS161675642416476: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <div class="page-container"> <!-- TS1616756424754: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <div class="sidebar-menu"> <div class="sidebar-menu-inner"> <header class="logo-env"> <!-- logo --> <div class="logo"> <a href="main-3"> <H1> <font color="white">Auditor</font></H1> </a> </div> <!-- logo collapse icon --> 
-<div class="sidebar-collapse"> <a href="#" class="sidebar-collapse-icon"><!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition --> <i class="entypo-menu"></i> </a> </div> <!-- open/close menu icon (do not remove if you want to enable menu on mobile devices) --> 
+gtag('config', 'UA-141030632-1', {"groups":"laborator_analytics","link_attribution":true,"linker":{"accept_incoming":true,"domains":["laborator.co","kaliumtheme.com","oxygentheme.com","neontheme.com","themeforest.net","laborator.ticksy.com"]}});</script> <title>Auditor</title> <link rel="stylesheet" href="css/no-theme-jquery-ui-1.10.3.custom.min.css" id="style-resource-1"> <link rel="stylesheet" href="css/css-entypo.css" id="style-resource-2"> <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic" id="style-resource-3"> <link rel="stylesheet" href="css/css-bootstrap.css" id="style-resource-4"> <link rel="stylesheet" href="css/css-neon-core.css" id="style-resource-5"> <link rel="stylesheet" href="css/css-neon-theme.css" id="style-resource-6"> <link rel="stylesheet" href="css/css-neon-forms.css" id="style-resource-7"> <link rel="stylesheet" href="css/css-custom.css" id="style-resource-8"> <script src="js/js-jquery-1.11.3.min.js"></script> <!--[if lt IE 9]><script src="https://demo.neontheme.com/assets/js/ie8-responsive-file-warning.js"></script><![endif]--> <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]--> <!-- TS1616756424: Neon - Responsive Admin Template created by Laborator --> </head> <body class="page-body page-fade gray" data-url="https://demo.neontheme.com"> <!-- TS161675642416476: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <div class="page-container"> <!-- TS1616756424754: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <div class="sidebar-menu"> <div class="sidebar-menu-inner"> <header class="logo-env"> <!-- logo --> <div class="logo"> <a href="main-3"> <H1> <font color="white">Auditor</font></H1> </a> </div> <!-- logo collapse icon -->
+<div class="sidebar-collapse"> <a href="#" class="sidebar-collapse-icon"><!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition --> <i class="entypo-menu"></i> </a> </div> <!-- open/close menu icon (do not remove if you want to enable menu on mobile devices) -->
 
 <div class="sidebar-mobile-menu visible-xs"> <a href="#" class="with-animation">
-  <!-- add class "with-animation" to support animation --> <i class="entypo-menu"></i> </a> </div> </header> 
-  <ul id="main-menu" class="main-menu"> 
+  <!-- add class "with-animation" to support animation --> <i class="entypo-menu"></i> </a> </div> </header>
+  <ul id="main-menu" class="main-menu">
   <li> <a href="issues"><i class="entypo-gauge"></i><span class="title">Dashboard</span></a> </li>
-       <ul class="visible"> 
+       <ul class="visible">
          <!-- <li class="has-sub"> <ul> <li> <a href="black.html"><span class="title">Black Skin</span></a> </li> <li> <a href="white.html"><span class="title">White Skin</span></a> </li> <li> <a href="purple.html"><span class="title">Purple Skin</span></a> </li> <li> <a href="cafe.html"><span class="title">Cafe Skin</span></a> </li> <li> <a href="red.html"><span class="title">Red Skin</span></a> </li> <li> <a href="green.html"><span class="title">Green Skin</span></a> </li> <li> <a href="yellow.html"><span class="title">Yellow Skin</span></a> </li> <li> <a href="blue.html"><span class="title">Blue Skin</span></a> </li> <li> <a href="facebook.html"><span class="title">Facebook Skin</span><span class="badge badge-secondary badge-roundless">New</span></a> </li> </ul> </li>  -->
-          </a> </li> </ul> </li> 
+          </a> </li> </ul> </li>
           <!-- <li> <a href="userpg"><i class="entypo-user"></i><span class="title">Auditors</span></a> </li> -->
 
           <ul id="main-menu" class="main-menu"> <li class="has-sub">
-               <a href=""><i class="entypo-user"></i><span class="title">Auditor</span></a> <ul> <li> 
+               <a href=""><i class="entypo-user"></i><span class="title">Auditor</span></a> <ul> <li>
                    <a href="list1"><span class="title">Layer 1</span></a> </li>
-                    <li> <a href="list2"><span class="title">Layer 2</span></a> </li> 
+                    <li> <a href="list2"><span class="title">Layer 2</span></a> </li>
                     <li><a href="list3"><span class="title">Layer 3</span></a> </li>
                     <li><a href="list4"><span class="title">Layer 4</span></a> </li></ul>
           <li> <a href="templates"><i class="glyphicon glyphicon-book"></i><span class="title">Templates</span></a> </li>
           <li> <a href="inspections"><i class="glyphicon glyphicon-check"></i><span class="title">Inspections</span></a> </li>
-          <li class="has-sub"> 
+          <li class="has-sub">
         <!-- <ul> <li> <a href="layout-api.html"><span class="title">Layout API</span></a> </li> <li> <a href="collapsed-sidebar.html"><span class="title">Collapsed Sidebar</span></a> </li> <li> <a href="fixed-sidebar.html"><span class="title">Fixed Sidebar</span></a> </li> <li> <a href="chat-open.html"><span class="title">Chat Open</span></a> </li> <li> <a href="horizontal-menu-boxed.html"><span class="title">Horizontal Menu Boxed</span></a> </li> <li> <a href="horizontal-menu-fluid.html"><span class="title">Horizontal Menu Fluid</span></a> </li> <li> <a href="mixed-menus.html"><span class="title">Mixed Menus</span></a> </li> <li> <a href="right-sidebar.html"><span class="title">Right Sidebar</span></a> </li> <li> <a href="both-menus-right-sidebar.html"><span class="title">Both Menus (Right Sidebar)</span></a> </li> <li class="has-sub"> <a href="page-transition-fade.html"><span class="title">Page Enter Transitions</span></a> <ul> <li> <a href="page-transition-fade.html"><span class="title">Fade Scale</span></a> </li> <li> <a href="page-transition-left-in.html"><span class="title">Left In</span></a> </li> <li> <a href="page-transition-right-in.html"><span class="title">Right In</span></a> </li> <li> <a href="page-transition-fade-only.html"><span class="title">Fade Only</span></a> </li> </ul> </li> <li> <a href="boxed.html"><span class="title">Boxed Layout</span></a> </li> </ul> </li> <li class="has-sub">  <ul> <li> <a href="panels.html"><span class="title">Panels</span></a> </li> <li> <a href="tiles.html"><span class="title">Tiles</span></a> </li> <li> <a href="buttons.html"><span class="title">Buttons</span></a> </li> <li> <a href="typography.html"><span class="title">Typography</span></a> </li> <li> <a href="tabs-accordions.html"><span class="title">Tabs &amp; Accordions</span></a> </li> <li> <a href="tooltips-popovers.html"><span class="title">Tooltips &amp; Popovers</span></a> </li> <li> <a href="navbars.html"><span class="title">Navbars</span></a> </li> <li> <a href="breadcrumbs.html"><span class="title">Breadcrumbs</span></a> </li> <li> <a href="s.html"><span class="title">Badges &amp; Labels</span></a> </li> <li> <a href="progress-bars.html"><span class="title">Progress Bars</span></a> </li> <li> <a href="modals.html"><span class="title">Modals</span></a> </li> <li> <a href="blockquotes.html"><span class="title">Blockquotes</span></a> </li> <li> <a href="alerts.html"><span class="title">Alerts</span></a> </li> <li> <a href="pagination.html"><span class="title">Pagination</span></a> </li> </ul> </li> -->
          <!-- <li class="has-sub"> <a href="main.html"><i class="entypo-mail"></i><span class="title">Mailbox</span><span class="badge badge-secondary">8</span></a> <ul> <li> <a href="main.html"><i class="entypo-inbox"></i><span class="title">Inbox</span></a> </li> <li> <a href="compose.html"><i class="entypo-pencil"></i><span class="title">Compose Message</span></a> </li> <li> <a href="message.html"><i class="entypo-attach"></i><span class="title">View Message</span></a> </li> </ul> </li>  -->
         <!-- <li class="has-sub"> <a href="main.html"><i class="entypo-doc-text"></i><span class="title">Forms</span></a> <ul> <li> <a href="main.html"><span class="title">Basic Elements</span></a> </li> <li> <a href="advanced.html"><span class="title">Advanced Plugins</span></a> </li> <li> <a href="wizard.html"><span class="title">Form Wizard</span></a> </li> <li> <a href="validation.html"><span class="title">Data Validation</span></a> </li> <li> <a href="masks.html"><span class="title">Input Masks</span></a> </li> <li> <a href="sliders.html"><span class="title">Sliders</span></a> </li> <li> <a href="file-upload.html"><span class="title">File Upload</span></a> </li> <li> <a href="wysiwyg.html"><span class="title">Editors</span></a> </li> </ul> </li> <li class="has-sub"> <a href="main.html"><i class="entypo-window"></i><span class="title">Tables</span></a> <ul> <li> <a href="main.html"><span class="title">Basic Tables</span></a> </li> <li> <a href="datatable.html"><span class="title">Data Tables</span></a> </li> </ul> </li>  -->
         <!-- <li class="has-sub"> <a href="icons.html"><i class="entypo-bag"></i><span class="title">Extra</span><span class="badge badge-info badge-roundless">New Items</span></a> <ul> <li class="has-sub"> <a href="icons.html"><span class="title">Icons</span><span class="badge badge-success">3</span></a> <ul> <li> <a href="icons-fontawesome.html"><span class="title">Font Awesome</span></a> </li> <li> <a href="icons-entypo.html"><span class="title">Entypo</span></a> </li> <li> <a href="icons-glyphicons.html"><span class="title">Glyph Icons</span></a> </li> </ul> </li> <li> <a href="portlets.html"><span class="title">Portlets</span></a> </li> <li class="has-sub"> <a href="google-maps.html"><span class="title">Maps</span></a> <ul> <li> <a href="google-maps.html"><span class="title">Google Maps</span></a> </li> <li> <a href="vector-maps.html"><span class="title">Vector Maps</span></a> </li> </ul> </li> <li> <a href="chat-api.html"><span class="title">Chat API</span></a> </li> <li> <a href="calendar.html"><span class="title">Calendar</span></a> </li> <li> <a href="calendar-2.html"><span class="title">Calendar 2</span><span class="badge badge-secondary badge-roundless">New</span></a> </li> <li> <a href="notes.html"><span class="title">Notes</span></a> </li> <li> <a href="lockscreen.html"><span class="title">Lockscreen</span></a> </li> <li> <a href="login.html"><span class="title">Login</span></a> </li> <li> <a href="register.html"><span class="title">Register</span></a> </li> <li> <a href="invoice.html"><span class="title">Invoice</span></a> </li> <li> <a href="members.html"><span class="title">Members</span></a> </li> <li class="has-sub"> <a href="gallery.html"><span class="title">Gallery</span></a> <ul> <li> <a href="gallery.html"><span class="title">Albums</span></a> </li> <li> <a href="gallery-single.html"><span class="title">Single Album</span></a> </li> </ul> </li> <li> <a href="profile.html"><span class="title">Profile</span></a> </li> <li> <a href="404.html"><span class="title">404 Page</span></a> </li> <li> <a href="blank-page.html"><span class="title">Blank Page</span></a> </li> <li> <a href="comments.html"><span class="title">Comments</span></a> </li> <li> <a href="timeline.html"><span class="title">Timeline</span></a> </li> <li> <a href="timeline-centered.html"><span class="title">Timeline Centered</span></a> </li> <li> <a href="tocify.html"><span class="title">Tocify</span></a> </li> <li> <a href="notifications.html"><span class="title">Notifications</span></a> </li> <li> <a href="new-post.html"><span class="title">New Post</span></a> </li> <li> <a href="settings.html"><span class="title">Settings</span></a> </li> <li> <a href="scrollbox.html"><span class="title">Scrollbox</span></a> </li> <li> <a href="image-crop.html"><span class="title">Image Crop</span></a> </li> <li> <a href="search.html"><span class="title">Search Page</span></a> </li> <li> <a href="language-selector.html"><span class="title">Language Selector</span></a> </li> <li> <a href="nestable.html"><span class="title">Nestable Lists</span></a> </li> <li> <a href="file-tree.html"><span class="title">File Tree</span></a> </li> <li> <a href="load-progress.html"><span class="title">Load Progress</span></a> </li> </ul> </li> -->
-        
+
         <li> <a href="issues"><i class="entypo-clipboard"></i><span class="title">Issues</span></a> </li>
         <li> <a href="create"><i class="entypo-calendar"></i><span class="title">Schedule</span></a> </li>
         <li> <a href="admin"><i class="entypo-user"></i><span class="title">Admin Profile</span></a> </li>
            </li> </ul> </div> </div>
-         
-         <div class="main-content"> <!-- TS161675642411050: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <div class="row"> <!-- Profile Info and Notifications --> <div class="col-md-6 col-sm-8 clearfix"> <ul class="user-info pull-left pull-none-xsm"> <!-- Profile Info --> <li class="profile-info dropdown"><!-- add class "pull-right" if you want to place this from right --> 
-         
+
+         <div class="main-content"> <!-- TS161675642411050: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <div class="row"> <!-- Profile Info and Notifications --> <div class="col-md-6 col-sm-8 clearfix"> <ul class="user-info pull-left pull-none-xsm"> <!-- Profile Info --> <li class="profile-info dropdown"><!-- add class "pull-right" if you want to place this from right -->
+
          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="images/images-thumb-1@2x.png" alt="" class="img-circle" width="44">
 MAHLE ANAND
 </a> <ul class="dropdown-menu"> <!-- Reverse Caret --> <li class="caret"> <!-- Profile sub-links --> </li><li> <a href="timeline.html"> <i class="entypo-user"></i>
@@ -114,7 +114,7 @@ This ain&rsquo;t our first item, it is the best of the rest.
 </span> </a> </li> <li class="active"> <a href="#"> <span class="image pull-right"> <img src="images/images-thumb-2@2x.png" width="44" alt="" class="img-circle"> </span> <span class="line"> <strong>Salma Nyberg</strong>
 - 2 days ago
 </span> <span class="line desc small">
-Oh he decisively impression attachment friendship so if everything. 
+Oh he decisively impression attachment friendship so if everything.
 </span> </a> </li> <li> <a href="#"> <span class="image pull-right"> <img src="images/images-thumb-3@2x.png" width="44" alt="" class="img-circle"> </span> <span class="line">
 Hayden Cartwright
 - a week ago
@@ -130,26 +130,26 @@ On so attention necessary at by provision otherwise existence direction.
 Settings<i class="entypo-cog"></i> </a> </li>
 
 <li> <a href="login.html">
-Log Out <i class="entypo-logout right"></i> </a> </li> </ul> </div> </div> <hr> 
-<!-- TS16167567752040: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> 
-<ol class="breadcrumb bc-3"> <li> <a href="main-3"><i class="fa-home"></i>Home</a> </li> <li class="active"> <strong>Templates</strong> </li> </ol> <h2>Templates</h2> <section class="comments-env"> 
+Log Out <i class="entypo-logout right"></i> </a> </li> </ul> </div> </div> <hr>
+<!-- TS16167567752040: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates -->
+<ol class="breadcrumb bc-3"> <li> <a href="main-3"><i class="fa-home"></i>Home</a> </li> <li class="active"> <strong>Templates</strong> </li> </ol> <h2>Templates</h2> <section class="comments-env">
 
-<div class="filtering"> <div class="row"> <div class="col-sm-3">  
+<div class="filtering"> <div class="row"> <div class="col-sm-3">
 
-<div class="col-sm-9 search-and-pagination"> <div class="pagination-container"> <ul class="pagination">  </ul>   </div> </div> </div> </div> 
+<div class="col-sm-9 search-and-pagination"> <div class="pagination-container"> <ul class="pagination">  </ul>   </div> </div> </div> </div>
 <div class="row"> <div class="col-md-10"> <div class="panel panel-primary"> <div class="panel-heading"> <div class="panel-title"> <h4>
 Write your Questions here..
  </h4> </div> </div>
  <div class="panel-body no-padding"> <ul class="comments-list">
   <li> <div class="comment-checkbox">  </div>
-  <div class="comment-details">  
+  <div class="comment-details">
 
 <script>
  $(document).ready(function() {
 	var max_fields      = 30; //maximum input boxes allowed
 	var wrapper   		= $(".input_fields_wrap"); //Fields wrapper
 	var add_button      = $(".add_field_button"); //Add button ID
-	
+
 	var x = 1; //initlal text box count
 	$(add_button).click(function(e){ //on add input button click
 		e.preventDefault();
@@ -158,32 +158,32 @@ Write your Questions here..
 			$(wrapper).append('<div><br><input type="text" class="form-control" name="mytext[]"/> <Span><ul class="user-info pull-left pull-right-xs pull-none-xsm"> <li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-attention"></i>  </a> </li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-star"></i> </a></li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-db-shape"></i> </a><li></ul> </li></span><br><span><a href="#" class="remove_field">&nbspRemove</a></span><br></div>'); //add input box
 		}
 	});
-	
+
 	$(wrapper).on("click",".remove_field", function(e){ //user click on remove text
 		e.preventDefault(); $(this).parent('div').remove(); x--;
 	})
 });</script>
 <form method="post" action="questionSave" enctype="multipart/form-data">
     {{csrf_field()}}
- <div class="row"> <div class="col-sm-3"> 
- <input type="hidden" name="template_name" value="{{$name}}" required=""> 
+ <div class="row"> <div class="col-sm-3">
+ <input type="hidden" name="template_name" value="{{$name}}" required="">
 <label>Section Name:</label>
 <div><input type="text" class="form-control" placeholder="Name.." name="section_name" id="txtName"></div></div><br></br><br></br><br>
 <div class="row"> <div class="col-md-11"> <div class="input_fields_wrap">
     <button class="add_field_button">Add More Questions</button><br>
    <!-- <p> <label>Add Question</label></p> -->
     <br><div><input type="text" class="form-control" name="mytext[]"></div>
-    <Span><ul class="user-info pull-left pull-right-xs pull-none-xsm"> 
-    <li class="notifications dropdown"> 
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> 
+    <Span><ul class="user-info pull-left pull-right-xs pull-none-xsm">
+    <li class="notifications dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
     <i class="entypo-attention"></i>  </a> </li>
-    <li class="notifications dropdown"> 
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> 
+    <li class="notifications dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
     <i class="entypo-star"></i> </a></li>
-    <li class="notifications dropdown"> 
+    <li class="notifications dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
      <i class="entypo-db-shape"></i> </a><li></ul> </li></span><br>
-   
+
 
 <!-- <a href="javascript:;.html" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class="btn btn-primary" onclick="showAjaxModal();">Add Section</a> -->
 
@@ -211,30 +211,30 @@ jQuery('#modal-7 .modal-body').html(response);
     {{csrf_field()}}
     <div class="modal fade" id="modal-6"> <div class="modal-dialog">
  <div class="modal-content"> <div class="modal-header">
-  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> 
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
   <h4 class="modal-title">Add Section</h4> </div>
    <div class="modal-body"> <div class="row"> <div class="col-md-12">
-   
-    <div class="form-group"> <label for="field-1" class="control-label">Section Name:</label>  
+
+    <div class="form-group"> <label for="field-1" class="control-label">Section Name:</label>
 <div><input type="text" class="form-control" placeholder="Name.." name="Name"></div></div>
-   
-   
+
+
 <form name="add_name" id="add_name" >
             <table class="table table-bordered table-hover" id="dynamic_field">
               <tr>
                 <td><input type="text" name="question[]" placeholder="" class="form-control name_list" /></td>
-                
-                <td><button type="button" name="add" id="add" class="btn btn-primary">Add More</button></td>  
+
+                <td><button type="button" name="add" id="add" class="btn btn-primary">Add More</button></td>
               </tr>
             </table>
-            </div> </div> 
-         <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+            </div> </div>
+         <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
          <button class="btn btn-success" >Submit</button></div>
-</div> </div> </div> </div> 
+</div> </div> </div> </div>
           </form>
         </div>
       </div>
-      
+
     <div class="col-md-1"></div>
   </div>
 </div>
@@ -257,12 +257,12 @@ jQuery('#modal-7 .modal-body').html(response);
 
     $("#add").click(function(){
       i++;
-      $('#dynamic_field').append('<tr id="row'+i+'"><td><input type="text" name="question[]" placeholder="" class="form-control name_list"/></td><td><Span><ul class="user-info pull-left pull-right-xs pull-none-xsm"> <li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-attention"></i>  </a> </li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-star"></i> </a></li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-db-shape"></i> </a><li></ul> </li></span><br><span><i  id="'+i+'" class="entypo-cancel btn_remove"></i></td></tr>');  
+      $('#dynamic_field').append('<tr id="row'+i+'"><td><input type="text" name="question[]" placeholder="" class="form-control name_list"/></td><td><Span><ul class="user-info pull-left pull-right-xs pull-none-xsm"> <li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-attention"></i>  </a> </li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-star"></i> </a></li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-db-shape"></i> </a><li></ul> </li></span><br><span><i  id="'+i+'" class="entypo-cancel btn_remove"></i></td></tr>');
     });
 
-    $(document).on('click', '.btn_remove', function(){  
-      var button_id = $(this).attr("id");   
-      $('#row'+button_id+'').remove();  
+    $(document).on('click', '.btn_remove', function(){
+      var button_id = $(this).attr("id");
+      $('#row'+button_id+'').remove();
     });
 
     $("#submit").on('click',function(){
@@ -285,8 +285,8 @@ jQuery('#modal-7 .modal-body').html(response);
 
 
 
-   
-  
+
+
 
 
 
@@ -318,3 +318,4 @@ Delete
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
  })();
 </script> </body> </html>
+

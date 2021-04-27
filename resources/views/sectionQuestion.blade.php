@@ -1,5 +1,52 @@
 <!DOCTYPE html>
-<html lang="en"> <head> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="description" content="Neon Admin Panel"> <meta name="author" content="Laborator.co"> <link rel="icon" href="favicons/images-favicon.ico"> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141030632-1"></script> <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+<html lang="en"> <head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="Neon Admin Panel">
+ <meta name="author" content="Laborator.co">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="icon" href="favicons/images-favicon.ico">
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141030632-1"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 10px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+
+
+
+   <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'UA-141030632-1', {"groups":"laborator_analytics","link_attribution":true,"linker":{"accept_incoming":true,"domains":["laborator.co","kaliumtheme.com","oxygentheme.com","neontheme.com","themeforest.net","laborator.ticksy.com"]}});</script> <title>Auditor</title> <link rel="stylesheet" href="css/no-theme-jquery-ui-1.10.3.custom.min.css" id="style-resource-1"> <link rel="stylesheet" href="css/css-entypo.css" id="style-resource-2"> <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic" id="style-resource-3"> <link rel="stylesheet" href="css/css-bootstrap.css" id="style-resource-4"> <link rel="stylesheet" href="css/css-neon-core.css" id="style-resource-5"> <link rel="stylesheet" href="css/css-neon-theme.css" id="style-resource-6"> <link rel="stylesheet" href="css/css-neon-forms.css" id="style-resource-7"> <link rel="stylesheet" href="css/css-custom.css" id="style-resource-8"> <script src="js/js-jquery-1.11.3.min.js"></script> <!--[if lt IE 9]><script src="https://demo.neontheme.com/assets/js/ie8-responsive-file-warning.js"></script><![endif]--> <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]--> <!-- TS1616756424: Neon - Responsive Admin Template created by Laborator --> </head> <body class="page-body page-fade gray" data-url="https://demo.neontheme.com"> <!-- TS161675642416476: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <div class="page-container"> <!-- TS1616756424754: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <div class="sidebar-menu"> <div class="sidebar-menu-inner"> <header class="logo-env"> <!-- logo --> <div class="logo"> <a href="main-3"> <H1> <font color="white">Auditor</font></H1> </a> </div> <!-- logo collapse icon -->
 <div class="sidebar-collapse"> <a href="#" class="sidebar-collapse-icon"><!-- add class "with-animation" if you want sidebar to have animation during expanding/collapsing transition --> <i class="entypo-menu"></i> </a> </div> <!-- open/close menu icon (do not remove if you want to enable menu on mobile devices) -->
@@ -88,122 +135,174 @@ Settings<i class="entypo-cog"></i> </a> </li>
 
 <li> <a href="login.html">
 Log Out <i class="entypo-logout right"></i> </a> </li> </ul> </div> </div> <hr>
-<!-- TS16167564246526: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <script type="text/javascript">
-jQuery(document).ready(function($)
-{
-// Sample Toastr Notification
-// setTimeout(function()
-// {
-// var opts = {
-// "closeButton": true,
-// "debug": false,
-// "positionClass": rtl() || public_vars.$pageContainer.hasClass('right-sidebar') ? "toast-top-left" : "toast-top-right",
-// "toastClass": "black",
-// "onclick": null,
-// "showDuration": "300",
-// "hideDuration": "1000",
-// "timeOut": "5000",
-// "extendedTimeOut": "1000",
-// "showEasing": "swing",
-// "hideEasing": "linear",
-// "showMethod": "fadeIn",
-// "hideMethod": "fadeOut"
-// };
-// toastr.success("You have been awarded with 1 year free subscription. Enjoy it!", "Account Subcription Updated", opts);
-// }, 3000);
+<!-- TS16167567752040: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates -->
+<ol class="breadcrumb bc-3"> <li> <a href="main-3"><i class="fa-home"></i>Home</a> </li> <li class="active"> <strong>Templates</strong> </li> </ol> <h2>Templates</h2> <section class="comments-env">
+
+<div class="filtering"> <div class="row"> <div class="col-sm-3">
+
+<div class="col-sm-9 search-and-pagination"> <div class="pagination-container"> <ul class="pagination">  </ul>   </div> </div> </div> </div>
+<div class="row"> <div class="col-md-10"> <div class="panel panel-primary"> <div class="panel-heading"> <div class="panel-title"> <h4>
+Write your Questions here..
+ </h4> </div> </div>
+ <div class="panel-body no-padding"> <ul class="comments-list">
+  <li> <div class="comment-checkbox">  </div>
+  <div class="comment-details">
+
+<script>
+ $(document).ready(function() {
+	var max_fields      = 30; //maximum input boxes allowed
+	var wrapper   		= $(".input_fields_wrap"); //Fields wrapper
+	var add_button      = $(".add_field_button"); //Add button ID
+
+	var x = 1; //initlal text box count
+	$(add_button).click(function(e){ //on add input button click
+		e.preventDefault();
+		if(x < max_fields){ //max input box allowed
+			x++; //text box increment
+			$(wrapper).append('<div><br><input type="text" class="form-control" name="mytext[]"/> <Span><ul class="user-info pull-left pull-right-xs pull-none-xsm"> <li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-attention"></i>  </a> </li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-star"></i> </a></li><li class="notifications dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class="entypo-db-shape"></i> </a><li></ul> </li></span><br><span><a href="#" class="remove_field">&nbspRemove</a></span><br></div>'); //add input box
+		}
+	});
+
+	$(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+		e.preventDefault(); $(this).parent('div').remove(); x--;
+	})
+});</script>
+<form method="post" action="questionSave" enctype="multipart/form-data">
+    {{csrf_field()}}
+ <div class="col-sm-3 row">
+ <input type="hidden" name="template_name" value="{{$templatename}}" required="">
+<label>Section Name:</label>
+<div><h2>{{$sectionName}}</h2></div></div><br></br><br></br><br>
+@foreach($result as $id=>$r)
+@foreach ($r as $s)
 
 
-// $(".daily-visitors").sparkline([1,5,5.5,5.4,5.8,6,8,9,13,12,10,11.5,9,8,5,8,9], {
-//   type: 'line',
-//   width: '100%',
-//   height: '55',
-//   lineColor: '#ff4e50',
-//   fillColor: '#ffd2d3',
-//   lineWidth: 2,
-//   spotColor: '#a9282a',
-//   minSpotColor: '#a9282a',
-//   maxSpotColor: '#a9282a',
-//   highlightSpotColor: '#a9282a',
-//   highlightLineColor: '#f4c3c4',
-//   spotRadius: 2,
-//   drawNormalOnTop: true
-//  });
+<div><form method="POST" action="sectionQuestion">
+        @csrf
+        <input type="hidden" name="sectionName" value="{{$s["question"]}}" required="">
+        <input type="hidden" name="templatename" value="{{$templatename}}" required="">
+        <input type="submit" class="btn btn-grey btn-block " name="submit" style="margin-right:25%;text-align:left;" value="{{$s["question"]}}">
+        <br>
+    <Span>
+        <ul class="user-info pull-left pull-right-xs pull-none-xsm">
+            <li class="notifications dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                    <i class="entypo-attention"></i>
+                </a>
+            </li>
+            <li class="notifications dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                    <i class="entypo-star"></i>
+                </a>
+            </li>
+            <li class="notifications dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                    <i class="entypo-db-shape"></i>
+                </a>
+            </li>
+            <li class="notifications dropdown">
+                <button type="button" class="btn btn-info btn-lg" onclick="myFunction('{{$id}}','{{$s['question']}}','{{$sectionName}}','{{$templatename}}')" data-toggle="modal" data-target="#myModal">Edit</button>
+            </li>
+        </ul>
+    </span>
+    <br>
+    </form>
+    </div>
+    <br>
+    @endforeach
+@endforeach
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+<div class="row" style="margin-left:2%";> <div class="col-md-11"> <div class="input_fields_wrap">
+    <button class="add_field_button">Add More Questions</button><br>
+   <!-- <p> <label>Add Question</label></p> -->
+    <br><div><input type="text" class="form-control" name="mytext[]"></div>
+    <Span><ul class="user-info pull-left pull-right-xs pull-none-xsm">
+    <li class="notifications dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+    <i class="entypo-attention"></i>  </a> </li>
+    <li class="notifications dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+    <i class="entypo-star"></i> </a></li>
+    <li class="notifications dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+     <i class="entypo-db-shape"></i> </a><li></ul> </li></span><br>
+
+
+<!-- <a href="javascript:;.html" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class="btn btn-primary" onclick="showAjaxModal();">Add Section</a> -->
 
 
 
- $("#calendar").fullCalendar({
-header: {
-left: '',
-right: '',
-},
-firstDay: 1,
-height: 200,
-});
-});
+</div></div></div></div>
+<button class="btn btn-success ">Submit</button></form></div>
 
 
-</script>
-
-<div class="row"> <div class="col-md-3 col-sm-6"> </div>
- <br> <div class="row"> <div class="col-md-9"> <script type="text/javascript">
-jQuery(document).ready(function($)
-{
-var map = $("#map-2");
-map.vectorMap({
-map: 'europe_merc_en',
-zoomMin: '3',
-backgroundColor: '#f4f4f4',
-focusOn: { x: 0.5, y: 0.7, scale: 3 },
-  markers: [
-   {latLng: [50.942, 6.972], name: 'Cologne'},
-   {latLng: [42.6683, 21.164], name: 'Prishtina'},
-   {latLng: [41.3861, 2.173], name: 'Barcelona'},
-  ],
-  markerStyle: {
-   initial: {
-    fill: '#ff4e50',
-    stroke: '#ff4e50',
-  "stroke-width": 6,
-  "stroke-opacity": 0.3,
-     }
-  },
-regionStyle:
-{
- initial: {
-  fill: '#e9e9e9',
-  "fill-opacity": 1,
-  stroke: 'none',
-  "stroke-width": 0,
-  "stroke-opacity": 1
- },
- hover: {
-  "fill-opacity": 0.8
- },
- selected: {
-  fill: 'yellow'
- },
- selectedHover: {
- }
-}
-});
-});
-</script>
-<div class="tile-group tile-group-2"> <div class="tile-left tile-white">
 
 
-    </div> </div> </div> <br>
+    <!-- Modal -->
 
-    <div class="row"> <div class="col-sm-8"> <div class="panel panel-primary panel-table"> <div class="panel-heading"> <div class="panel-title">
-      <h3>List of Issues </div>
-       <div class="panel-options"> <a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a> <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a> <a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a> <a href="#" data-rel="close"><i class="entypo-cancel"></i></a> </div> </div>
-        <div class="panel-body"> <table class="table table-responsive">
-         <thead> <tr> <th>Layers</th> <th>Issue</th> <th class="text-center">Result</th> </tr> </thead>
-         <tbody> <tr> <td>Flappy Bird</td> <td>2,215,215</td> <td class="text-center"><span class="top-apps">4,3,5,4,5,6,3,2,5,3</span></td> </tr> <tr> <td>Angry Birds</td> <td>1,001,001</td> <td class="text-center"><span class="top-apps">3,2,5,4,3,6,7,5,7,9</span></td> </tr> <tr> <td>Asphalt 8</td> <td>998,003</td> <td class="text-center"><span class="top-apps">1,3,4,3,5,4,3,6,9,8</span></td> </tr> <tr> <td>Viber</td> <td>512,015</td> <td class="text-center"><span class="top-apps">9,2,5,7,2,4,6,7,2,6</span></td> </tr> <tr> <td>Whatsapp</td> <td>504,135</td> <td class="text-center"><span class="top-apps">1,4,5,4,4,3,2,5,4,3</span></td> </tr> </tbody> </table> </div> </div> </div>
-      <div class="col-sm-4"> <div class="panel panel-primary panel-table"> <div class="panel-heading"> <div class="panel-title"> <h3>Events</h3> <span>This month's event calendar</span> </div>
-       <div class="panel-options"> <a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a> <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a> <a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a> <a href="#" data-rel="close"><i class="entypo-cancel"></i></a> </div> </div> <div class="panel-body"> <div id="calendar" class="calendar-widget"> </div> </div> </div> </div> </div><!-- TS161675642412610: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <!-- Footer --> <footer class="main"> <div class="pull-right"> </div></footer></div>
-<!-- TS16167564244832: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <div id="chat" class="fixed" data-current-user="Art Ramadani" data-order-by-status="1" data-max-chat-history="25"> <div class="chat-inner"> <h2 class="chat-header"> <a href="#" class="chat-close"><i class="entypo-cancel"></i></a> <i class="entypo-users"></i>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Edit Question</h4>
+            </div>
+            <div class="modal-body">
+
+                <form class="form-container" method="post" action="questionEdit" enctype="multipart/form-data">
+                    {{csrf_field()}}
+                  <label for="psw"><b>Question</b></label>
+                  <input type="text" placeholder="question"  id ="editQuestion" name="question" required>
+                  <input type="hidden" placeholder="id"  id ="editQuestionId" name="id" required>
+                  <input type="hidden" placeholder="section"  id ="editQuestionSection" name="section" required>
+                  <input type="hidden" placeholder="template"  id ="editQuestionTemplate" name="template" required>
+                  <br>
+                  <button type="submit" class="btn">Save</button>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        function myFunction(id,question,section,template) {
+          document.getElementById("editQuestion").value = question;
+          document.getElementById("editQuestionId").value = id;
+          document.getElementById("editQuestionSection").value = section;
+          document.getElementById("editQuestionTemplate").value = template;
+        }
+        </script>
+
+
+
+
+
+ <div id="chat" class="fixed" data-current-user="Art Ramadani" data-order-by-status="1" data-max-chat-history="25"> <div class="chat-inner"> <h2 class="chat-header"> <a href="#" class="chat-close"><i class="entypo-cancel"></i></a> <i class="entypo-users"></i>
 Chat
-<span class="badge badge-success is-hidden">0</span> </h2> <div class="chat-group" id="group-1"> <strong>Favorites</strong> <a href="#" id="sample-user-123" data-conversation-history="#sample_history"><span class="user-status is-online"></span> <em>Catherine J. Watkins</em></a> <a href="#"><span class="user-status is-online"></span> <em>Nicholas R. Walker</em></a> <a href="#"><span class="user-status is-busy"></span> <em>Susan J. Best</em></a> <a href="#"><span class="user-status is-offline"></span> <em>Brandon S. Young</em></a> <a href="#"><span class="user-status is-idle"></span> <em>Fernando G. Olson</em></a> </div> <div class="chat-group" id="group-2"> <strong>Work</strong> <a href="#"><span class="user-status is-offline"></span> <em>Robert J. Garcia</em></a> <a href="#" data-conversation-history="#sample_history_2"><span class="user-status is-offline"></span> <em>Daniel A. Pena</em></a> <a href="#"><span class="user-status is-busy"></span> <em>Rodrigo E. Lozano</em></a> </div> <div class="chat-group" id="group-3"> <strong>Social</strong> <a href="#"><span class="user-status is-busy"></span> <em>Velma G. Pearson</em></a> <a href="#"><span class="user-status is-offline"></span> <em>Margaret R. Dedmon</em></a> <a href="#"><span class="user-status is-online"></span> <em>Kathleen M. Canales</em></a> <a href="#"><span class="user-status is-offline"></span> <em>Tracy J. Rodriguez</em></a> </div> </div> <!-- conversation template --> <div class="chat-conversation"> <div class="conversation-header"> <a href="#" class="conversation-close"><i class="entypo-cancel"></i></a> <span class="user-status"></span> <span class="display-name"></span> <small></small> </div> <ul class="conversation-body"> </ul> <div class="chat-textarea"> <textarea class="form-control autogrow" placeholder="Type your message"></textarea> </div> </div> </div> <!-- Chat Histories --> <ul class="chat-history" id="sample_history"> <li> <span class="user">Art Ramadani</span> <p>Are you here?</p> <span class="time">09:00</span> </li> <li class="opponent"> <span class="user">Catherine J. Watkins</span> <p>This message is pre-queued.</p> <span class="time">09:25</span> </li> <li class="opponent"> <span class="user">Catherine J. Watkins</span> <p>Whohoo!</p> <span class="time">09:26</span> </li> <li class="opponent unread"> <span class="user">Catherine J. Watkins</span> <p>Do you like it?</p> <span class="time">09:27</span> </li> </ul> <!-- Chat Histories --> <ul class="chat-history" id="sample_history_2"> <li class="opponent unread"> <span class="user">Daniel A. Pena</span> <p>I am going out.</p> <span class="time">08:21</span> </li> <li class="opponent unread"> <span class="user">Daniel A. Pena</span> <p>Call me when you see this message.</p> <span class="time">08:27</span> </li> </ul> </div> <!-- Imported styles on this page --> <link rel="stylesheet" href="css/jvectormap-jquery-jvectormap-1.2.2.css" id="style-resource-1"> <link rel="stylesheet" href="css/rickshaw-rickshaw.min.css" id="style-resource-2"> <script src="js/gsap-TweenMax.min.js" id="script-resource-1"></script> <script src="js/js-jquery-ui-1.10.3.minimal.min.js" id="script-resource-2"></script> <script src="js/js-bootstrap.js" id="script-resource-3"></script> <script src="js/js-joinable.js" id="script-resource-4"></script> <script src="js/js-resizeable.js" id="script-resource-5"></script> <script src="js/js-neon-api.js" id="script-resource-6"></script> <script src="js/js-cookies.min.js" id="script-resource-7"></script> <script src="js/jvectormap-jquery-jvectormap-1.2.2.min.js" id="script-resource-8"></script> <script src="js/jvectormap-jquery-jvectormap-europe-merc-en.js" id="script-resource-9"></script> <script src="js/js-jquery.sparkline.min.js" id="script-resource-10"></script> <script src="js/vendor-d3.v3.js" id="script-resource-11"></script> <script src="js/rickshaw-rickshaw.min.js" id="script-resource-12"></script> <script src="js/js-raphael-min.js" id="script-resource-13"></script> <script src="js/js-morris.min.js" id="script-resource-14"></script> <script src="js/js-toastr.js" id="script-resource-15"></script> <script src="js/fullcalendar-fullcalendar.min.js" id="script-resource-16"></script> <script src="js/js-neon-chat.js" id="script-resource-17"></script> <!-- JavaScripts initializations and stuff --> <script src="js/js-neon-custom.js" id="script-resource-18"></script> <!-- Demo Settings --> <script src="js/js-neon-demo.js" id="script-resource-19"></script> <script src="js/js-neon-skins.js" id="script-resource-20"></script> <script type="text/javascript">
+<span class="badge badge-success is-hidden">0</span> </h2> <div class="chat-group" id="group-1"> <strong>Favorites</strong> <a href="#" id="sample-user-123" data-conversation-history="#sample_history"><span class="user-status is-online"></span> <em>Catherine J. Watkins</em></a> <a href="#"><span class="user-status is-online"></span> <em>Nicholas R. Walker</em></a> <a href="#"><span class="user-status is-busy"></span> <em>Susan J. Best</em></a> <a href="#"><span class="user-status is-offline"></span> <em>Brandon S. Young</em></a> <a href="#"><span class="user-status is-idle"></span> <em>Fernando G. Olson</em></a> </div> <div class="chat-group" id="group-2"> <strong>Work</strong> <a href="#"><span class="user-status is-offline"></span> <em>Robert J. Garcia</em></a> <a href="#" data-conversation-history="#sample_history_2"><span class="user-status is-offline"></span> <em>Daniel A. Pena</em></a> <a href="#"><span class="user-status is-busy"></span> <em>Rodrigo E. Lozano</em></a> </div> <div class="chat-group" id="group-3"> <strong>Social</strong> <a href="#"><span class="user-status is-busy"></span> <em>Velma G. Pearson</em></a> <a href="#"><span class="user-status is-offline"></span> <em>Margaret R. Dedmon</em></a> <a href="#"><span class="user-status is-online"></span> <em>Kathleen M. Canales</em></a> <a href="#"><span class="user-status is-offline"></span> <em>Tracy J. Rodriguez</em></a> </div> </div> <!-- conversation template --> <div class="chat-conversation"> <div class="conversation-header"> <a href="#" class="conversation-close"><i class="entypo-cancel"></i></a> <span class="user-status"></span> <span class="display-name"></span> <small></small> </div> <ul class="conversation-body"> </ul> <div class="chat-textarea"> <textarea class="form-control autogrow" placeholder="Type your message"></textarea> </div> </div> </div> <!-- Chat Histories --> <ul class="chat-history" id="sample_history"> <li> <span class="user">Art Ramadani</span> <p>Are you here?</p> <span class="time">09:00</span> </li> <li class="opponent"> <span class="user">Catherine J. Watkins</span> <p>This message is pre-queued.</p> <span class="time">09:25</span> </li> <li class="opponent"> <span class="user">Catherine J. Watkins</span> <p>Whohoo!</p> <span class="time">09:26</span> </li> <li class="opponent unread"> <span class="user">Catherine J. Watkins</span> <p>Do you like it?</p> <span class="time">09:27</span> </li> </ul> <!-- Chat Histories --> <ul class="chat-history" id="sample_history_2"> <li class="opponent unread"> <span class="user">Daniel A. Pena</span> <p>I am going out.</p> <span class="time">08:21</span> </li> <li class="opponent unread"> <span class="user">Daniel A. Pena</span> <p>Call me when you see this message.</p> <span class="time">08:27</span> </li> </ul> </div> <!-- TS16167567755937: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <!-- Edit Comment Modal --> <div class="modal fade" id="modal-edit-comment"> <div class="modal-dialog" style="width: 60%;"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> <h4 class="modal-title">Edit Comment</h4> </div> <div class="modal-body"> <div class="row"> <div class="col-sm-2"> <a href="#"> <img src="images/images-member-2.jpg" class="img-rounded img-responsive"> </a> <br> <span>Comments: 1026</span> <br> <span>Member since: 2007</span> </div> <div class="col-sm-10"> <div class="row"> <div class="col-md-12"> <div class="form-group"> <label for="field-1" class="control-label">Name</label> <input type="text" class="form-control" id="field-3" value="Ksenia Sawicka"> </div> </div> </div> <div class="row"> <div class="col-md-12"> <div class="form-group"> <label for="field-1" class="control-label">Comment</label> <textarea class="form-control" id="field-2" style="min-height: 120px;">Servants contempt as although addition dashwood is procured. Interest in yourself an do of numerous feelings cheerful confined.
+By an packages rejoiced exercise. To ought on am marry rooms doubt music. Mention entered an through company as. Up arrived no painful between. It declared is prospect an insisted pleasure.
+Put use set uncommonly announcing and travelling. Allowance sweetness direction to as necessary. Principle oh explained excellent do my suspected conveying in. Excellent you did therefore perfectly supposing described.
+</textarea> </div> </div> </div> <div class="row"> <div class="col-md-4"> <div class="form-group"> <label for="field-1" class="control-label">Date Added</label> <p> <strong>Tuesday, 20 March - 20:05</strong> </p> </div> </div> <div class="col-md-4"> <div class="form-group"> <label for="field-1" class="control-label">Article</label> <p> <a href="#"> <strong>The Women of the Flames</strong> </a> </p> </div> </div> <div class="col-md-4"> <div class="form-group"> <label for="field-1" class="control-label">Comment Actions</label> <p> <a href="#" class="text-success bold"> <i class="entypo-check"></i>
+Approve
+</a> <a href="#" class="text-danger bold"> <i class="entypo-cancel"></i>
+Delete
+</a> </p> </div> </div> </div> </div> </div>
+
+
+
+<div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> <button type="button" class="btn btn-info">Update</button> </div> </div> </div> </div> <!-- Imported styles on this page --> <link rel="stylesheet" href="css/selectboxit-jquery.selectBoxIt.css" id="style-resource-1"> <script src="js/gsap-TweenMax.min.js" id="script-resource-1"></script> <script src="js/js-jquery-ui-1.10.3.minimal.min.js" id="script-resource-2"></script> <script src="js/js-bootstrap.js" id="script-resource-3"></script> <script src="js/js-joinable.js" id="script-resource-4"></script> <script src="js/js-resizeable.js" id="script-resource-5"></script> <script src="js/js-neon-api.js" id="script-resource-6"></script> <script src="js/js-cookies.min.js" id="script-resource-7"></script> <script src="js/selectboxit-jquery.selectBoxIt.min.js" id="script-resource-8"></script> <script src="js/js-neon-chat.js" id="script-resource-9"></script> <!-- JavaScripts initializations and stuff --> <script src="js/js-neon-custom.js" id="script-resource-10"></script> <!-- Demo Settings --> <script src="js/js-neon-demo.js" id="script-resource-11"></script> <script src="js/js-neon-skins.js" id="script-resource-12"></script> <script type="text/javascript">
  var _gaq = _gaq || [];
  _gaq.push(['_setAccount', 'UA-28991003-7']);
  _gaq.push(['_setDomainName', 'demo.neontheme.com']);
@@ -214,3 +313,4 @@ Chat
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
  })();
 </script> </body> </html>
+

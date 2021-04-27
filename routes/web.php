@@ -48,9 +48,7 @@ Route::get('/task', function () {
     return view('task');
 });
 
-Route::get('/loginpg', function () {
-    return view('loginpg');
-});
+
 Route::get('/settings', function () {
     return view('settings');
 });
@@ -107,10 +105,24 @@ Route::post('/templateEdit', [QueController::class, 'question'])->name('template
 Route::get('/templates2', [QueController::class, 'question2'])->name('templates.display');
 Route::get('/templates3', [QueController::class, 'question3'])->name('templates.display');
 
+<<<<<<< Updated upstream
 Route::post('/questionSave', [QueController::class, 'store'])->name('tasks.store');
+=======
+Route::post('/questionSave', [QueController::class, 'store'])->name('question.store');
+Route::post('/questionEdit', [QueController::class, 'edit'])->name('question.edit');
+>>>>>>> Stashed changes
 Route::post('/templateSave', [FirebaseController::class, 'template'])->name('template.store');
 Route::post('/deleteUser', [FirebaseController::class, 'delete'])->name('delete.user');
 Route::post('/verifyUser', [FirebaseController::class, 'verify'])->name('verify.user');
 
+<<<<<<< Updated upstream
 Route::get('/userpg', [FirebaseController::class, 'tempDisplay'])->name('template.display');
 Route::post('/addSection', [QueController::class, 'section'])->name('add.section');
+=======
+Route::get('/templates', [FirebaseController::class, 'tempDisplay'])->name('template.display');
+Route::post('/addSection', [QueController::class, 'section'])->name('add.section');
+
+Route::post('/sectionQuestion', [QueController::class, 'viewSectionQue'])->name('section.display');
+
+
+>>>>>>> Stashed changes
