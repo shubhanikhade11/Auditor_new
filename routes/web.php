@@ -87,6 +87,10 @@ Route::get('/xyz', function () {
     return view('abc');
 });
 
+Route::get('/testCal', function () {
+    return view('testCal');
+});
+
 Route::resource('tasks', TasksController::class);
 Route::get('/index', [TasksController::class, 'index'])->name('tasks.index');
 Route::post('/tasks', [TasksController::class, 'store'])->name('tasks.store');

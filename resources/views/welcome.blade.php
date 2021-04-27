@@ -130,3 +130,28 @@
         </div>
     </body>
 </html>
+<div class="tile-group tile-group-2"> <div class="tile-left tile-white">
+
+
+</div> </div> </div> <br>
+
+<div class="row"> <div class="col-sm-8"> <div class="panel panel-primary panel-table"> <div class="panel-heading"> <div class="panel-title">
+  <h3>List of Users</h3> </div>
+   <div class="panel-options"> <a href="#sample-modal" data-toggle="modal" data-target="#sample-modal-dialog-1" class="bg"><i class="entypo-cog"></i></a> <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a> <a href="#" data-rel="reload"><i class="entypo-arrows-ccw"></i></a> <a href="#" data-rel="close"><i class="entypo-cancel"></i></a> </div> </div>
+    <div class="panel-body"> <table class="table table-responsive">
+     <thead> <tr> <th>Name</th> <th>Email</th> <th>Mobile Number</th><th>Reports</th><th style="text-align:center">Action</th></tr> </thead>
+     <tbody> 
+
+<tr> <td></td> <td></td><td> </td>
+<td><form >
+                                        <input type="hidden" name="name" value="" required="">
+                                        <input type="submit" name="submit" style="margin-right:25%;" value="View">
+                                      </form></td>
+                                    <td><form>
+                                        
+                                        <input type="hidden" name="name" value="" required="">
+                                        <input type="submit" name="submit" style="margin-right:25%;" value="Edit">
+                                    </form></td>
+                                    
+
+</tr> </tbody> </table> </div> </div> </div>

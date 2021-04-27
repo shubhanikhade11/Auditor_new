@@ -7,7 +7,7 @@ gtag('config', 'UA-141030632-1', {"groups":"laborator_analytics","link_attributi
 <div class="sidebar-mobile-menu visible-xs"> <a href="#" class="with-animation">
   <!-- add class "with-animation" to support animation --> <i class="entypo-menu"></i> </a> </div> </header> 
   <ul id="main-menu" class="main-menu"> 
-  <li> <a href="issues"><i class="entypo-gauge"></i><span class="title">Dashboard</span></a> </li>
+  <li> <a href="main-3"><i class="entypo-gauge"></i><span class="title">Dashboard</span></a> </li>
        <ul class="visible"> 
          <!-- <li class="has-sub"> <ul> <li> <a href="black.html"><span class="title">Black Skin</span></a> </li> <li> <a href="white.html"><span class="title">White Skin</span></a> </li> <li> <a href="purple.html"><span class="title">Purple Skin</span></a> </li> <li> <a href="cafe.html"><span class="title">Cafe Skin</span></a> </li> <li> <a href="red.html"><span class="title">Red Skin</span></a> </li> <li> <a href="green.html"><span class="title">Green Skin</span></a> </li> <li> <a href="yellow.html"><span class="title">Yellow Skin</span></a> </li> <li> <a href="blue.html"><span class="title">Blue Skin</span></a> </li> <li> <a href="facebook.html"><span class="title">Facebook Skin</span><span class="badge badge-secondary badge-roundless">New</span></a> </li> </ul> </li>  -->
           </a> </li> </ul> </li> 
