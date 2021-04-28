@@ -126,5 +126,87 @@ class FirebaseController extends Controller
             $database->getReference('Users/questions/'.$name)->set(['kshatrugan'=>'']);
              return redirect('/userpg');
         }
+
+
+        public function levelList(){
+            $database = app('firebase.database');
+           
+          $levelList=$database->getReference('Levels/')->getValue();
+            return view('levelList')->with('levelList',$levelList);
+        }
+        public function levelSave(Request $request){
+            
+            $database = app('firebase.database');
+            $name=$request->input('Name');
+           $TaskData = ["name"=> $name];
+            $newPostKey = $database->getReference('Levels')->push()->getKey();
+            $updates = [ 'Levels/'.$newPostKey => $TaskData,];
+            $database->getReference() // this is the root reference
+               ->update($updates);
+                return redirect('/levelList');
+        }
+
+        public function levelEdit(Request $request){  
+            $database = app('firebase.database');
+            $id=$request->input('editLevelId');
+            $levelName=$request->input('editLevelName');
+            $level=["name"=>$levelName];
+            $database->getReference('Levels/'.$id )->set($level);
+            $levelList=$database->getReference('Levels/')->getValue();
+            return view('levelList')->with('levelList',$levelList);
+        }
+
+        public function layerList(){
+            $database = app('firebase.database');
+           
+          $layerList=$database->getReference('Layers/')->getValue();
+            return view('layerList')->with('layerList',$layerList);
+        }
+        public function layerSave(Request $request){ 
+            $database = app('firebase.database');
+            $name=$request->input('Name');
+            $TaskData = ["name"=> $name ];
+            $newPostKey = $database->getReference('Layers')->push()->getKey();
+            $updates = [ 'Layers/'.$newPostKey => $TaskData,];
+            $database->getReference() // this is the root reference
+               ->update($updates);
+                return redirect('/layerList');
+        }
+        public function layerEdit(Request $request){  
+            $database = app('firebase.database');
+            $id=$request->input('editLayerId');
+            $layerName=$request->input('editLayerName');
+            $layer=["name"=>$layerName];
+            $database->getReference('Layers/'.$id )->set($layer);
+            $layerList=$database->getReference('Layers/')->getValue();
+            return view('layerList')->with('layerList',$layerList);
+           }
+
+        public function machineList(){
+            $database = app('firebase.database');  
+          $machineList=$database->getReference('Machines/')->getValue();
+            return view('machineList')->with('machineList',$machineList);
+        }
+        public function machineSave(Request $request){ 
+            $database = app('firebase.database');
+            $name=$request->input('Name');
+            $TaskData = ["name"=> $name ];
+            $newPostKey = $database->getReference('Machines')->push()->getKey();
+            $updates = [ 'Machines/'.$newPostKey => $TaskData,];
+            $database->getReference() // this is the root reference
+               ->update($updates);
+                return redirect('/machineList');
+        }   
+        public function machineEdit(Request $request){  
+         $database = app('firebase.database');
+         $id=$request->input('editMachineId');
+         $machineName=$request->input('editMachineName');
+         $machine=["name"=>$machineName];
+         $database->getReference('Machines/'.$id )->set($machine);
+         $machineList=$database->getReference('Machines/')->getValue();
+         return view('machineList')->with('machineList',$machineList);
+        }
+
         
 }
+

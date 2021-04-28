@@ -119,4 +119,25 @@ Route::post('/verifyUser', [FirebaseController::class, 'verify'])->name('verify.
 Route::get('/userpg', [FirebaseController::class, 'tempDisplay'])->name('template.display');
 Route::post('/addSection', [QueController::class, 'section'])->name('add.section');
 
+
 Route::post('/sectionQuestion', [QueController::class, 'viewSectionQue'])->name('section.display');
+
+Route::post('/AddQuestion', [QueController::class, 'AddQuestion'])->name('Question.Addition');
+
+Route::get('/levelList', [FirebaseController::class, 'levelList'])->name('levelList.display');
+
+Route::post('/levelSave', [FirebaseController::class, 'levelSave'])->name('levelSave.store');
+
+Route::get('/layerList', [FirebaseController::class, 'layerList'])->name('layerList.display');
+
+Route::post('/layerSave', [FirebaseController::class, 'layerSave'])->name('layerSave.store');
+
+Route::get('/machineList', [FirebaseController::class, 'machineList'])->name('machineList.display');
+
+Route::post('/machineSave', [FirebaseController::class, 'machineSave'])->name('machineSave.store');
+
+Route::post('/machineEdit', [FirebaseController::class, 'machineEdit'])->name('machineEdit.edit');
+
+Route::post('/layerEdit', [FirebaseController::class, 'layerEdit'])->name('layerEdit.edit');
+
+Route::post('/levelEdit', [FirebaseController::class, 'levelEdit'])->name('levelEdit.edit');

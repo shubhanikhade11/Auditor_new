@@ -81,4 +81,28 @@ public function section(Request $request)
 
 }
 
+
+public function AddQuestion(request $request)
+{
+    
+     $database  = app('firebase.database'); 
+     $data = [
+        'template_name'=>$request->input('template_name'),
+        'level_name' => $request->input('level_name'),
+        'section_name'=>$request->input('section_name'),
+ 
+        'question'=>$request->input('mytext')];
+        
+
+        $newPostKey = $database->getReference('Questions')->push()->getKey();
+        $updates = [
+            'Questions/'.$newPostKey => $data,
+        ];
+        $database->getReference()->update($updates);
+       
+        // return redirect()->route('tasks.index');
+        dd($data);
+       
+}
+
 }

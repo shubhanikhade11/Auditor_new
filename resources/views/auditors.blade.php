@@ -200,30 +200,19 @@ regionStyle:
          <thead> <tr> <th>Name</th> <th>Email</th> <th>Mobile Number</th><th>Reports</th><th style="text-align:center">Action</th></tr> </thead>
          <tbody>   @foreach ($result as $user )
 
-   <tr> <td>{{$user['Name']}}</td> <td>{{$user['email']}}</td><td> {{$user['mobile']}}</td>
-    <td><form method="POST" action="{{route('report.display')}}">
-                                            @csrf
-                                            <input type="hidden" name="name" value="{{$user['Name']}}" required="">
-                                            <input type="submit" name="submit" style="margin-right:25%;" value="View">
-                                          </form></td>
-                                        <td><form method="POST" action="#">
-                                            @csrf
-                                            <input type="hidden" name="name" value="{{$user['Name']}}" required="">
-                                            <input type="submit" name="submit" style="margin-right:25%;" value="Edit">
-                                        </form></td>
-                                        <td><form method="POST" action="{{ route('verify.user') }}">
-                                            @csrf
-                                            <input type="hidden" name="name" value="{{$user['Name']}}" required="">
-                                            <input type="submit" name="submit" style="margin-right:25%;" value="Verify">
-                                          </form></td>
-                                          <td>
-        <form method="POST" action="{{ route('delete.user') }}">
-                                            @csrf
-                                            <input type="hidden" name="name" value="{{$user['Name']}}" required="">
-                                            <input type="submit" name="submit" style="margin-right:25%;" value="Delete">
-                                          </form></td>
-
-</tr>@endforeach </tbody> </table> </div> </div> </div>
+          
+         @if({{$user}}=='layers')
+    
+@elseif ({{$user}}=='levels')
+    
+    @elseif ({{$user}}=='machines')
+    
+    @elseif ({{$user}}=='questions')
+    
+@else
+    <p>{{$user['name']}}</p>
+@endif
+         @endforeach </tbody> </table> </div> </div> </div>
 
       <!-- TS161675642412610: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <!-- Footer --> <footer class="main"> <div class="pull-right"> </div></footer></div>
 <!-- TS16167564244832: Xenon - Boostrap Admin Template created by Laborator / Please buy this theme and support the updates --> <div id="chat" class="fixed" data-current-user="Art Ramadani" data-order-by-status="1" data-max-chat-history="25"> <div class="chat-inner"> <h2 class="chat-header"> <a href="#" class="chat-close"><i class="entypo-cancel"></i></a> <i class="entypo-users"></i>

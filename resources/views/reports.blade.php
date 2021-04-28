@@ -121,3 +121,28 @@ tr:nth-child(even) {
 
 </body>
 </html>
+
+<tr> <td>{{$user['Name']}}</td> <td>{{$user['email']}}</td><td> {{$user['mobile']}}</td>
+    <td><form method="POST" action="{{route('report.display')}}">
+                                            @csrf
+                                            <input type="hidden" name="name" value="{{$user['Name']}}" required="">
+                                            <input type="submit" name="submit" style="margin-right:25%;" value="View">
+                                          </form></td>
+                                        <td><form method="POST" action="#">
+                                            @csrf
+                                            <input type="hidden" name="name" value="{{$user['Name']}}" required="">
+                                            <input type="submit" name="submit" style="margin-right:25%;" value="Edit">
+                                        </form></td>
+                                        <td><form method="POST" action="{{ route('verify.user') }}">
+                                            @csrf
+                                            <input type="hidden" name="name" value="{{$user['Name']}}" required="">
+                                            <input type="submit" name="submit" style="margin-right:25%;" value="Verify">
+                                          </form></td>
+                                          <td>
+        <form method="POST" action="{{ route('delete.user') }}">
+                                            @csrf
+                                            <input type="hidden" name="name" value="{{$user['Name']}}" required="">
+                                            <input type="submit" name="submit" style="margin-right:25%;" value="Delete">
+                                          </form></td>
+
+</tr>
