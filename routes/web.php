@@ -87,8 +87,8 @@ Route::get('/xyz', function () {
     return view('abc');
 });
 
-Route::get('/testCal', function () {
-    return view('testCal');
+Route::get('/displayQue', function () {
+    return view('displayQue');
 });
 
 Route::resource('tasks', TasksController::class);
@@ -117,7 +117,7 @@ Route::post('/deleteUser', [FirebaseController::class, 'delete'])->name('delete.
 Route::post('/verifyUser', [FirebaseController::class, 'verify'])->name('verify.user');
 
 Route::get('/userpg', [FirebaseController::class, 'tempDisplay'])->name('template.display');
-Route::post('/addSection', [QueController::class, 'section'])->name('add.section');
+Route::post('/addSection', [QueController::class, 'xyz'])->name('add.section');
 
 
 Route::post('/sectionQuestion', [QueController::class, 'viewSectionQue'])->name('section.display');
@@ -141,3 +141,7 @@ Route::post('/machineEdit', [FirebaseController::class, 'machineEdit'])->name('m
 Route::post('/layerEdit', [FirebaseController::class, 'layerEdit'])->name('layerEdit.edit');
 
 Route::post('/levelEdit', [FirebaseController::class, 'levelEdit'])->name('levelEdit.edit');
+
+Route::get('/userList', [FirebaseController::class, 'userList'])->name('userList.display');
+
+Route::post('/userEdit', [FirebaseController::class, 'userEdit'])->name('userEdit.edit');

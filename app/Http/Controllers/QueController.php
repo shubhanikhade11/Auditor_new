@@ -75,7 +75,7 @@ public function section(Request $request)
      $name=$request->input('template_name');
     //  $Name = str_replace(' ', '', $Name);
     //  $name=$Name."_questions";
-    return view('abc')->with('name', $name );
+    return view('section')->with('name', $name );
    
 
 
@@ -84,25 +84,39 @@ public function section(Request $request)
 
 public function AddQuestion(request $request)
 {
-    
-     $database  = app('firebase.database'); 
+
+     $database  = app('firebase.database');
+     $question=$request->input('mytext');
+     $stop=$request->input('stop');
+     $close=$request->input('close');
+     $quarantine=$request->input('quarantine');
+    //  dd($question,$stop,$close,$quarantine);
+     foreach ($question as $key=>$value){
+
+
      $data = [
-        'template_name'=>$request->input('template_name'),
+        'layer_name'=>$request->input('template_name'),
         'level_name' => $request->input('level_name'),
         'section_name'=>$request->input('section_name'),
- 
-        'question'=>$request->input('mytext')];
-        
+        'question'=>$value,
+        'stop'=>$stop[$key],
+        'close'=>$close[$key],
+        'quarantine'=>$quarantine[$key]
+        ];
+
+        // echo($data['stop']);
+        // dd($data);
 
         $newPostKey = $database->getReference('Questions')->push()->getKey();
         $updates = [
             'Questions/'.$newPostKey => $data,
         ];
-        $database->getReference()->update($updates);
-       
+
+         $database->getReference()->update($updates);
+     }
         // return redirect()->route('tasks.index');
-        dd($data);
-       
+    //  return redirect('/xyz');
+
 }
 
 }

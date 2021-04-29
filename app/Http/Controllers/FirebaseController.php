@@ -206,7 +206,27 @@ class FirebaseController extends Controller
          $machineList=$database->getReference('Machines/')->getValue();
          return view('machineList')->with('machineList',$machineList);
         }
+        public function userList(){
+            $database = app('firebase.database');  
+          $userList=$database->getReference('Users/')->getValue();
+          $layerList=$database->getReference('Layers/')->getValue();
+          $levelList=$database->getReference('Levels/')->getValue();
+            return view('userList')->with('userList',$userList)->with('layerList', $layerList)->with('levelList',$levelList);
+        }
 
+        public function userEdit(Request $request){  
+            $database = app('firebase.database');
+            $id=$request->input('id');
+            $name=$request->input('Name');
+            $email=$request->input('email');
+            $mobile=$request->input('mobile');
+            $level=$request->input('level');
+            $layer=$request->input('layer');
+            $user=["Name"=>$name, "email"=>$email, "mobile"=>$mobile,"level"=>$level, "layer"=>$layer,];
+            $database->getReference('Users/'.$id )->set($user);
+            $userList=$database->getReference('Users/')->getValue();
+            return view('userList')->with('userList',$userList);
+        }
         
 }
 
