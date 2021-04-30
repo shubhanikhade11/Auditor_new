@@ -43,22 +43,17 @@ gtag('config', 'UA-141030632-1', {"groups":"laborator_analytics","link_attributi
          </a> </li> </ul> </li> 
           
 
-          <ul id="main-menu" class="main-menu"> <li class="has-sub">
-               <a href=""><i class="entypo-user"></i><span class="title">Auditor</span></a> <ul> 
-               <li>
-                  <a href="list1"><span class="title">Layer 1</span></a>
-                </li>
-                <li> <a href="list2"><span class="title">Layer 2</span></a> </li>
-                <li><a href="list3"><span class="title">Layer 3</span></a> </li>
-                <li><a href="list4"><span class="title">Layer 4</span></a> </li>
-              </ul>
-              <li> <a href="layerList"><i class="glyphicon glyphicon-book"></i><span class="title">Layers</span></a> </li>
-            <li> <a href="userpg"><i class="glyphicon glyphicon-book"></i><span class="title">Templates</span></a> </li>
-            <li> <a href="levelList"><i class="glyphicon glyphicon-book"></i><span class="title">Level</span></a> </li>
-            <li> <a href="machineList"><i class="glyphicon glyphicon-book"></i><span class="title">Machine</span></a> </li>
-            <li> <a href="inspections"><i class="glyphicon glyphicon-check"></i><span class="title">Inspections</span></a> </li>
+          
+               <li><a href="userList"><i class="entypo-users"></i><span class="title">Users</span></a> </li> 
+               
+              <li> <a href="layerList"><i class="entypo-layout"></i><span class="title">Layers</span></a> </li>
+            
+            <li> <a href="levelList"><i class="entypo-database"></i><span class="title">Level</span></a> </li>
+            <li> <a href="section"><i class="entypo-book"></i><span class="title">Section</span></a> </li>
+            <li> <a href="machineList"><i class="entypo-lifebuoy"></i><span class="title">Machine</span></a> </li>
+            <li> <a href="inspections"><i class="entypo-check"></i><span class="title">Inspections</span></a> </li>
             <li class="has-sub">
-             
+            <li> <a href="displayQue"><i class="entypo-help-circled"></i><span class="title">Question</span></a> </li>
             <li> <a href="issues"><i class="entypo-clipboard"></i><span class="title">Issues</span></a> </li>
             <li> <a href="create"><i class="entypo-calendar"></i><span class="title">Schedule</span></a> </li>
             <li> <a href="admin"><i class="entypo-user"></i><span class="title">Admin Profile</span></a> </li>

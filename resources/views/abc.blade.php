@@ -30,21 +30,44 @@ Write your Questions here..
 		e.preventDefault(); $(this).parent('div').remove(); x--;
 	})
 });</script>
+
 <form method="post" action="AddQuestion" enctype="multipart/form-data">
 @csrf
 <div class="col-sm-3 row"> 
 
 <label>Layer Name:</label>
-<div><input type="text" class="form-control" placeholder="Name.." name="template_name" value="" id="txtName"></div></div><br></br><br></br>
+<div>
+<select name="template_name" class="form-control" id="template_name" required>
+                        <option >Select</option>
+                        @foreach ($layerList as $key => $layer )
+                         <option value="{{$layer['name']}}" >{{$layer['name']}}</option >
+                        @endforeach
+                      </select>  
+</div></div><br></br><br></br>
 <div class="col-sm-3 row"> 
 
 <label>Level Name:</label>
-<div><input type="text" class="form-control" placeholder="Name.." name="level_name" value="" id="txtName"></div></div><br></br><br></br>
+
+<div>
+<select name="level_name" class="form-control" id="level_name" required>
+                        <option >Select</option>
+                        @foreach ($levelList as $key => $level )
+                         <option value="{{$level['name']}}" >{{$level['name']}}</option >
+                        @endforeach
+                      </select>  
+</div></div><br></br><br></br>
 
  <div class="col-sm-3 row"> 
 
 <label>Section Name:</label>
-<div><input type="text" class="form-control" placeholder="Name.." name="section_name" value="" id="txtName"></div></div><br></br><br></br>
+<div>
+<select name="section_name" class="form-control" id="section_name" required>
+                        <option >Select</option>
+                        @foreach ($sectionList as $key => $section )
+                         <option value="{{$section['name']}}" >{{$section['name']}}</option >
+                        @endforeach
+                      </select>
+</div></div><br></br><br></br>
 <label>Question:</label><br>
 <div class="col-md-11 row" >
 <input type="text" class="form-control" placeholder="" name="mytext[]" value=""></div><br></br>

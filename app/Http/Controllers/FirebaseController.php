@@ -227,6 +227,62 @@ class FirebaseController extends Controller
             $userList=$database->getReference('Users/')->getValue();
             return view('userList')->with('userList',$userList);
         }
+
+        public function queView(){
+            $database = app('firebase.database');  
+          $questions=$database->getReference('Questions/')->getValue();
+          $layerList=$database->getReference('Layers/')->getValue();
+          $levelList=$database->getReference('Levels/')->getValue();
+          $sectionList=$database->getReference('Section/')->getValue();
+            return view('displayQue')->with('questions',$questions)->with('layerList', $layerList)->with('levelList',$levelList)->with('sectionList',$sectionList);
+        }
+        public function queEdit(Request $request){  
+            $database = app('firebase.database');
+            $id=$request->input('id');
+            $layer_name=$request->input('layer_name');
+            $level_name=$request->input('level_name');
+            $section_name=$request->input('section_name');
+            $question=$request->input('question');
+            $close=$request->input('close');
+            $stop=$request->input('stop');
+            $quarantine=$request->input('quarantine');
+            $questionView=["layer_name"=>$layer_name, "level_name"=>$level_name, "section_name"=>$section_name,"question"=>$question, "close"=>$close,"stop"=>$stop,"quarantine"=>$quarantine,];
+            $database->getReference('Questions/'.$id )->set($questionView);
+            $questions=$database->getReference('Questions/')->getValue();
+            return redirect('displayQue')->with('questions',$questions);
+        }
+        public function sectionList(){
+            $database = app('firebase.database');
+           
+          $sectionList=$database->getReference('Section/')->getValue();
+            return view('section')->with('sectionList',$sectionList);
+        }
+        public function sectionSave(Request $request){ 
+            $database = app('firebase.database');
+            $name=$request->input('Name');
+            $TaskData = ["name"=> $name ];
+            $newPostKey = $database->getReference('Section')->push()->getKey();
+            $updates = [ 'Section/'.$newPostKey => $TaskData,];
+            $database->getReference() // this is the root reference
+               ->update($updates);
+                return redirect('/section');
+        }
+        public function sectionEdit(Request $request){  
+            $database = app('firebase.database');
+            $id=$request->input('editSectionId');
+            $sectionName=$request->input('editSectionName');
+            $section=["name"=>$sectionName];
+            $database->getReference('Section/'.$id )->set($section);
+            $sectionList=$database->getReference('Section/')->getValue();
+            return view('section')->with('scetionList',$sectionList);
+           }
+           public function addQuestionDisplay(){
+            $database = app('firebase.database');  
+          $sectionList=$database->getReference('Section/')->getValue();
+          $layerList=$database->getReference('Layers/')->getValue();
+          $levelList=$database->getReference('Levels/')->getValue();
+            return view('abc')->with('sectionList',$sectionList)->with('layerList', $layerList)->with('levelList',$levelList);
+        }
         
-}
+        }
 

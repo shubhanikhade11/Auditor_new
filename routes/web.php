@@ -118,6 +118,7 @@ Route::post('/verifyUser', [FirebaseController::class, 'verify'])->name('verify.
 
 Route::get('/userpg', [FirebaseController::class, 'tempDisplay'])->name('template.display');
 Route::post('/addSection', [QueController::class, 'xyz'])->name('add.section');
+Route::get('/addQuestionDisplay', [FirebaseController::class, 'addQuestionDisplay'])->name('addQuestion.display');
 
 
 Route::post('/sectionQuestion', [QueController::class, 'viewSectionQue'])->name('section.display');
@@ -145,3 +146,11 @@ Route::post('/levelEdit', [FirebaseController::class, 'levelEdit'])->name('level
 Route::get('/userList', [FirebaseController::class, 'userList'])->name('userList.display');
 
 Route::post('/userEdit', [FirebaseController::class, 'userEdit'])->name('userEdit.edit');
+
+Route::get('/displayQue', [FirebaseController::class, 'queView'])->name('question.display');
+
+Route::post('/QueEdit', [FirebaseController::class, 'queEdit'])->name('question.edit');
+
+Route::get('/section', [FirebaseController::class, 'sectionList'])->name('sectionList.display');
+
+Route::post('/sectionSave', [FirebaseController::class, 'sectionSave'])->name('sectionSave.store');
