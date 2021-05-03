@@ -53,9 +53,11 @@ gtag('config', 'UA-141030632-1', {"groups":"laborator_analytics","link_attributi
             <li> <a href="machineList"><i class="entypo-lifebuoy"></i><span class="title">Machine</span></a> </li>
             <li> <a href="inspections"><i class="entypo-check"></i><span class="title">Inspections</span></a> </li>
             <li class="has-sub">
-            <li> <a href="displayQue"><i class="entypo-help-circled"></i><span class="title">Question</span></a> </li>
-            <li> <a href="issues"><i class="entypo-clipboard"></i><span class="title">Issues</span></a> </li>
-            <li> <a href="create"><i class="entypo-calendar"></i><span class="title">Schedule</span></a> </li>
+            <li> <a href="displayQue"><i class="entypo-help-circled"></i><span class="title">Questions</span></a> </li>
+            <li> <a href="issues"><i class="entypo-alert"></i><span class="title">Issues</span></a> </li>
+            <li> <a href="task"><i class="entypo-calendar"></i><span class="title">Schedule</span></a> </li>
+            <li> <a href="taskList"><i class="entypo-clipboard"></i><span class="title">Reports</span></a> </li>
+            <li> <a href="noticeList"><i class="entypo-attention"></i><span class="title">Notice</span></a> </li>
             <li> <a href="admin"><i class="entypo-user"></i><span class="title">Admin Profile</span></a> </li>
             </li>
             </ul> </div> </div>

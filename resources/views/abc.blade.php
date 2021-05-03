@@ -78,7 +78,7 @@ Write your Questions here..
     <label for="stop">Stop the production&nbsp;</label>
 <select name="stop[]" id="stop" required>
   <option >Select</option> 
-  <option value="1">Yes</option>
+  <option value="Stop">Yes</option>
   <option value="0">No</option>
 </select><br>
 <label for="close">Close the non-conformity immediately&nbsp;</label>

@@ -4,12 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Kreait\Firebase\Database;
+use Kreait\Firebase\Messaging\CloudMessage;
+use Kreait\Firebase\Messaging;
+use Kreait\Firebase\Messaging\Notification;
 
 class FirebaseController extends Controller
 {
-    public function __construct(Database $database)
+    public function __construct(Database $database, Messaging $messaging)
     {
         $this->database = $database;
+        $this->messaging = $messaging;
     }
 
     public function retrieve(Request $request)
@@ -283,6 +287,186 @@ class FirebaseController extends Controller
           $levelList=$database->getReference('Levels/')->getValue();
             return view('abc')->with('sectionList',$sectionList)->with('layerList', $layerList)->with('levelList',$levelList);
         }
+
+
+        public function task(){
+            $database = app('firebase.database');  
+            $userList=$database->getReference('Users/')->getValue();
+          $layerList=$database->getReference('Layers/')->getValue();
+          $levelList=$database->getReference('Levels/')->getValue();
+          $machineList=$database->getReference('Machines/')->getValue();
+            return view('task')->with('userList',$userList)->with('layerList', $layerList)->with('levelList',$levelList)->with('machineList',$machineList);
+        }
+
+        public function taskSave(Request $request){  
+            $database = app('firebase.database');
+            $level=$request->input('level');
+            $layer=$request->input('layer');
+            $user=$request->input('user');
+            $userDetails=$database->getReference('Users/'.$user."/")->getValue();
+            $userName =  $userDetails['Name'];
+            $machine=$request->input('machine');
+            $task=$request->input('task');
+            $date=$request->input('date');
+            $date = str_replace('-', '/', $date);
+            $time=$request->input('time');
+            $TaskData = ["level"=> $level, "layer"=> $layer, "user"=> $user,
+            "userName"=> $userName, "machine"=> $machine, "task"=> $task, "date"=> $date, "time"=> $time ];
+            $newPostKey = $database->getReference('Tasks')->push()->getKey();
+            $updates = [ 'Tasks/'.$newPostKey => $TaskData,];
+            $database->getReference() // this is the root reference
+               ->update($updates); 
+
+
+            
+            $messaging = app('firebase.messaging');
+
+
+            $deviceToken= $userDetails['token'];
+            $notification = Notification::fromArray([
+                'title' => "Your audit is scheduled at",
+                'body'  => $date.' '.$time,
+                
+
+            ]);
+            
+
+            $message = CloudMessage::withTarget('token', $deviceToken)
+            ->withNotification($notification) // optional
+            ->withData($TaskData) // optional
+            ;
+
+            $message = CloudMessage::fromArray([
+            'token' => $deviceToken,
+            'notification' => $notification,
+            'data' => $TaskData,
+            
+            ]);
+
+            $messaging->send($message);
+            
+               $userList=$database->getReference('Users/')->getValue();
+               $layerList=$database->getReference('Layers/')->getValue();
+               $levelList=$database->getReference('Levels/')->getValue();
+               $machineList=$database->getReference('Machines/')->getValue();
+                 return view('task')->with('userList',$userList)->with('layerList', $layerList)->with('levelList',$levelList)->with('machineList',$machineList);
+        }
+
+
+        public function taskEdit(Request $request){  
+            $database = app('firebase.database');
+            $id=$request->input('id');
+            $level=$request->input('level');
+            $layer=$request->input('layer');
+            $user=$request->input('user');
+            $userDetails=$database->getReference('Users/'.$user."/")->getValue();
+            $userName =  $userDetails['Name'];
+            $machine=$request->input('machine');
+            $task=$request->input('task');
+            $date=$request->input('date');
+            $date = str_replace('-', '/', $date);
+            $time=$request->input('time');
+            $TaskData = ["level"=> $level, "layer"=> $layer, "user"=> $user,
+            "userName"=> $userName, "machine"=> $machine, "task"=> $task, "date"=> $date, "time"=> $time ];
+            $database->getReference('Tasks/'.$id )->set($TaskData);
+
+            $messaging = app('firebase.messaging');
+
+
+            $deviceToken= $userDetails['token'];
+            $notification = Notification::fromArray([
+                'title' => "Your audit is scheduled at",
+                'body'  => $date.' '.$time,
+                
+
+            ]);
+            
+
+            $message = CloudMessage::withTarget('token', $deviceToken)
+            ->withNotification($notification) // optional
+            ->withData($TaskData) // optional
+            ;
+
+            $message = CloudMessage::fromArray([
+            'token' => $deviceToken,
+            'notification' => $notification,
+            'data' => $TaskData,
+            
+            ]);
+
+            $messaging->send($message);
+
+              $userList=$database->getReference('Users/')->getValue();
+               $layerList=$database->getReference('Layers/')->getValue();
+               $levelList=$database->getReference('Levels/')->getValue();
+               $machineList=$database->getReference('Machines/')->getValue();
+               $taskList=$database->getReference('Tasks/')->getValue();
+                 return view('taskList')->with('taskList',$taskList)->with('userList',$userList)->with('layerList', $layerList)->with('levelList',$levelList)->with('machineList',$machineList);
+                }
+
+
+
+        public function taskList(){
+            $database = app('firebase.database');  
+            $taskList=$database->getReference('Tasks/')->getValue();
+            $userList=$database->getReference('Users/')->getValue();
+            $layerList=$database->getReference('Layers/')->getValue();
+            $levelList=$database->getReference('Levels/')->getValue();
+            $machineList=$database->getReference('Machines/')->getValue();
+              return view('taskList')->with('taskList',$taskList)->with('userList',$userList)->with('layerList', $layerList)->with('levelList',$levelList)->with('machineList',$machineList);
+        }
+        public function noticeList(){
+            $database = app('firebase.database');  
+            $userList=$database->getReference('Users/')->getValue();
+            $noticeList=$database->getReference('Notice/')->orderbychild('time','DESC')->getValue();
+             return view('noticeList')->with('userList',$userList)->with('noticeList', $noticeList);
+        }
+
+
+        public function noticeSave(Request $request){ 
+            $database = app('firebase.database');
+            $user=$request->input('user');
+            $userDetails=$database->getReference('Users/'.$user."/")->getValue();
+            $userName =  $userDetails['Name'];
+            $subject=$request->input('subject');
+            $notice=$request->input('notice');
+            date_default_timezone_set('Asia/Kolkata');
+            $time = date("F j, Y, g:i a");  
+            $TaskData = ["user"=> $user, "subject"=> $subject, "userName"=> $userName, "notice"=> $notice, "time"=>$time  ];
+            $newPostKey = $database->getReference('Notice')->push()->getKey();
+            $updates = [ 'Notice/'.$newPostKey => $TaskData,];
+
+            $messaging = app('firebase.messaging');
+
+
+            $deviceToken= $userDetails['token'];
+            $notification = Notification::fromArray([
+                'title' => $subject,
+                'body'  => $notice,
+                
+
+            ]);
+            
+
+            $message = CloudMessage::withTarget('token', $deviceToken)
+            ->withNotification($notification) // optional
+            ->withData($TaskData) // optional
+            ;
+
+            $message = CloudMessage::fromArray([
+            'token' => $deviceToken,
+            'notification' => $notification,
+            'data' => $TaskData,
+            
+            ]);
+
+            $messaging->send($message);
+            $database->getReference() // this is the root reference
+               ->update($updates);
+                return redirect('/noticeList');
+
+               
+        }   
         
         }
 

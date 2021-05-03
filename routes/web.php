@@ -154,3 +154,17 @@ Route::post('/QueEdit', [FirebaseController::class, 'queEdit'])->name('question.
 Route::get('/section', [FirebaseController::class, 'sectionList'])->name('sectionList.display');
 
 Route::post('/sectionSave', [FirebaseController::class, 'sectionSave'])->name('sectionSave.store');
+
+
+Route::get('/task', [FirebaseController::class, 'task'])->name('task.store');
+
+Route::post('/taskSave', [FirebaseController::class, 'taskSave'])->name('taskSave.store');
+
+Route::get('/taskList', [FirebaseController::class, 'taskList'])->name('taskList.display');
+
+Route::post('/taskEdit', [FirebaseController::class, 'taskEdit'])->name('taskEdit.edit');
+
+
+Route::get('/noticeList', [FirebaseController::class, 'noticeList'])->name('noticeList.display');
+
+Route::post('/noticeSave', [FirebaseController::class, 'noticeSave'])->name('noticeSave.store');
